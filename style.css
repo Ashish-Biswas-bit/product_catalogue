@@ -20,8 +20,8 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
 }
 @media (max-width: 767px) {
   .cover { padding-top: 1.5rem; }
-  .cover > div.absolute.bottom-0 { position: relative; inset: auto; width: 100%; margin-top: 1.5rem; }
 }
+.hero-footer { position: relative; width: 100%; }
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 .product-card { transition: transform .25s ease, box-shadow .25s ease; }
