@@ -22,6 +22,13 @@ const revealObserver = new IntersectionObserver((entries) => entries.forEach((en
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
+document.querySelectorAll(".monitor-tab").forEach((tab) => tab.addEventListener("click", () => {
+  document.querySelectorAll(".monitor-tab").forEach((item) => item.classList.remove("active"));
+  document.querySelectorAll(".monitor-panel").forEach((panel) => panel.classList.remove("active"));
+  tab.classList.add("active");
+  document.querySelector(`#${tab.dataset.monitor}`).classList.add("active");
+}));
+
 document.querySelector("#contact-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const form = event.currentTarget;
