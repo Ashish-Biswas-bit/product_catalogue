@@ -131,8 +131,18 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
 .energy-brand-grid .energy-image { min-height: 16rem; }
 .energy-brand-grid .energy-image img { min-height: 16rem; }
 .energy-brandbar { display: flex; justify-content: space-between; gap: 1rem; margin: 2.5rem -2rem -2rem; padding: .9rem 2rem; background: #008751; color: #fff; font-size: .78rem; font-weight: 600; }
+.energy-storage-panel { margin-top: 2rem; background: #fff; padding: 2rem; box-shadow: 0 8px 22px rgba(17,24,39,.06); }
+.storage-master { border-top: 3px solid #00a651; }
+.storage-copy { max-width: 58rem; color: #1e3a8a; font-size: 1rem; line-height: 1.8; }
+.storage-subsection { margin-top: 2.5rem; }
+.storage-hv-grid, .storage-lv-grid { margin-top: 1.25rem; }
+.storage-image { display: flex; min-height: 18rem; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #e5e7eb; background: #fff; }
+.storage-image img { width: 100%; height: 100%; min-height: 18rem; object-fit: contain; }
+.storage-product { display: flex; flex-direction: column; }
+.storage-badge { padding: .7rem 1rem; background: #1a4d2e; color: #fff; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
 @media (max-width: 640px) {
   .energy-inverter-panel { padding: 1.25rem; }
+  .energy-storage-panel { padding: 1.25rem; }
   .energy-brandbar { flex-direction: column; margin-left: -1.25rem; margin-right: -1.25rem; padding-left: 1.25rem; padding-right: 1.25rem; }
 }
 @media (min-width: 768px) {
