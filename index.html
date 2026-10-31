@@ -18,11 +18,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
+  <header class="site-header sticky top-0 z-50 bg-[#0B5327] text-white shadow-md">
+    <div class="relative mx-auto flex max-w-7xl items-center justify-end px-5 py-5 lg:px-10">
+      <button id="nav-toggle" type="button" class="rounded border border-white/40 px-3 py-2 md:hidden" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
+        <span class="block h-0.5 w-6 bg-white transition-transform"></span>
+        <span class="mt-1.5 block h-0.5 w-6 bg-white transition-opacity"></span>
+        <span class="mt-1.5 block h-0.5 w-6 bg-white transition-transform"></span>
+      </button>
+      <nav id="site-nav" class="absolute left-0 right-0 top-full hidden bg-[#0B5327] px-5 py-4 md:absolute md:left-1/2 md:right-auto md:top-1/2 md:block md:w-max md:-translate-x-1/2 md:-translate-y-1/2 md:bg-transparent md:p-0" aria-label="Primary navigation">
+        <ul class="flex flex-col gap-3 text-sm font-semibold md:flex-row md:items-center md:justify-center md:gap-6">
+          <li><a class="transition hover:text-[#f5c518]" href="#traffic">Traffic Management</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#signal-heads">Signal Heads</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#controllers">Controllers</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#infrastructure">Infrastructure</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#accessories-portfolio">Accessories</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#energy">Energy</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#lighting">Lighting</a></li>
+          <li><a class="transition hover:text-[#f5c518]" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
     <section id="cover" class="page cover relative flex min-h-[55vh] w-full flex-col items-center justify-center overflow-hidden text-center text-white md:min-h-[75vh]">
       <video class="cover-video absolute inset-0 z-0 h-full w-full object-cover" autoplay muted loop playsinline preload="metadata" poster="images/hero-smart-city.jpg" aria-label="Global Suntech traffic, solar, LED lighting, and engineering showcase"><source src="assets/hero-background.mp4" type="video/mp4"></video>
       <div class="cover-overlay" aria-hidden="true"></div>
-      <div class="relative z-20 px-5"><img class="hero-logo" src="images/global-suntech.png" alt="Global Suntech logo"><h1 class="display mt-8 text-6xl font-bold tracking-wide sm:text-8xl md:text-9xl">PRODUCT<br>CATALOGUE</h1><p class="mt-7 text-lg">PRODUCT CATALOGUE | Smart Signals. Everyday.</p></div>
+      <div class="relative z-20 px-5"><img class="hero-logo" src="images/global-suntech.png" alt="Global Suntech logo"><h1 class="display mt-1 text-6xl font-bold tracking-wide sm:text-8xl md:text-9xl">PRODUCT<br>CATALOGUE</h1></div>
     </section>
     <div class="hero-footer grid grid-cols-1 md:grid-cols-[35%_65%]">
       <div class="flex items-center justify-center bg-[#0B5327] px-5 py-3 text-center text-sm font-semibold text-white md:py-4">Global Suntech | Smart Signals. Everyday.</div>
@@ -57,6 +78,7 @@
           <img src="images/traffic-coordination-diagram.png" alt="" class="h-full w-full object-contain">
         </figure>
       </div>
+      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
     </section>
 
 <section id="traffic-dashboard-section" class="traffic-dashboard-section page bg-gstCream">
@@ -79,6 +101,7 @@
 
     <div class="mt-16"><div class="dashboard-heading"><span></span><div><p class="eyebrow">OUTCOMES &amp; ARCHITECTURE</p><h2 class="display">BENEFITS</h2></div></div><div class="benefits-grid mt-6"><article class="benefit-column"><h3>Leading Edge Algorithms</h3><div class="benefit-item"><b>Investment</b><span>Solid base for connected and automated future</span></div><div class="benefit-item"><b>Costs</b><span>Reduced engineering/planning efforts in advance</span></div><div class="benefit-item"><b>Safety</b><span>Fast reaction to incidents/unforeseen events</span></div><div class="benefit-item"><b>Environment</b><span>Reduced carbon footprint</span></div><div class="benefit-subpanel"><h4>Unique Selling Points</h4><ul><li>Real time predictive capacity optimization</li><li>Considers all modes of transport</li><li>Model based</li><li>AI powered Rolling horizon</li><li>V2X ready; traffic light assistant natively supported</li></ul></div></article><article class="benefit-column"><h3>Quality and Robustness</h3><ul class="benefit-checks"><li>High system availability</li><li>High system performance</li><li>High fault tolerance</li><li>Communication availability</li><li>Detectors availability</li></ul><div class="benefit-subpanel"><h4>Flexible solution architecture</h4><ul><li>Weighted priority for PT and Special vehicles</li><li>Hardware manufacturer agnostic (40+ TLC)</li><li>Multimodal support</li><li>Distributed intelligence over Hierarchical and Open architecture</li><li>Scalability (from small to large systems)</li></ul></div></article><article class="benefit-column"><h3>Assessments &amp; Open Communication Protocols</h3><div class="assessment-list"><span>Travel time reduction by <b>10-25%</b></span><span>Delay reduction by <b>15-35%</b></span><span>Stops reduction by <b>10-30%</b></span><span>Public Transport travel time reduction by <b>28%</b></span><span>Fuel consumption reduction by <b>8-10%</b></span></div><div class="benefit-subpanel"><h4>Open Communication Protocol</h4><ul><li><b>OPEN APIs:</b> Not a "Black box", scalable, XML, JSON, etc.</li><li><b>STATE OF THE ART TECHNOLOGY:</b> Restful API (Social Media Technology)</li><li><b>RICH SECURITY FEATURE:</b> OAuth Authorisation/Authentication</li><li><b>PROVEN INTEGRATION:</b> Integration with many systems, worldwide; E.g. Bosch, Milestone, Wavetronix, Genetec, Telegra</li></ul></div></article></div></div>
   </div>
+  <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
 </section>
 
 <section id="signal-heads" class="signal-heads-section page bg-white">
@@ -95,6 +118,7 @@
     <div class="signal-product mt-16"><div class="signal-product-heading"><h3>LED 300 RYG + INBUILT COUNTER</h3></div><div class="mt-6 grid grid-cols-1 items-center gap-8 lg:grid-cols-12"><div class="signal-spec-copy lg:col-span-5"><p>High efficient RYG signal head featuring 300 mm with inbuilt countdoown timer three colour. It is designed to meet high standards of efficiency and durability.</p><dl class="signal-meta compact"><div><dt>Material</dt><dd>UV-stabilized poly carbonate to withstand mechanical stress and adverse weather.</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="swatch red"></span>Red, <span class="swatch yellow"></span>Yellow, <span class="swatch green"></span>Green</dd></div></dl></div><div class="signal-asset-matrix lg:col-span-7"><figure><img src="images/ryg-inbuilt-counter-hardware.jpg" alt="RYG inbuilt counter hardware with digital clock"></figure><figure><img src="images/ryg-casing-blueprint-cad.png" alt="RYG casing blueprint CAD side profile"></figure><div class="dimension-table"><p>Dimension</p><table><tbody><tr><th>X</th><th>2K</th><th>3K</th><th>PC 70</th><th>PC 175</th><th>AL 105</th><th>AL 185</th><th>AL 240</th></tr></tbody></table></div></div></div></div>
     <div class="signal-product smart-pedestrian-product mt-16"><div class="signal-product-heading"><h3>SMART PEDESTRIAN</h3></div><div class="mt-6 grid grid-cols-1 items-start gap-8 md:grid-cols-12"><figure class="smart-pedestrian-image md:col-span-3"><img src="images/smart-pedestrian-pushbutton-box.jpg" alt="Smart pedestrian pushbutton boxes with PLEASE WAIT walking symbols"></figure><div class="signal-spec-copy md:col-span-6"><p>The smart pedestrian utilizes the physical pedestrian crossings, improving the way of crossing through smart technology. This is more suitable in towns, cities and schools. Global Suntech is a leader in implementing this technology.</p><dl class="signal-meta compact"><div><dt>Material</dt><dd>UV-stabilized poly-carbonate</dd></div><div><dt>Dimension</dt><dd>100, 200, 300mm; and combination</dd></div><div><dt>LED Colors</dt><dd><span class="swatch red"></span>Red, <span class="swatch green"></span>Green</dd></div></dl></div><figure class="smart-pedestrian-image md:col-span-3"><img src="images/smart-crosswalk-perspective-night.jpg" alt="Smart pedestrian nighttime urban crosswalk"></figure></div><figure class="smart-aerial-image mt-8"><img src="images/smart-intersection-aerial-telemetry.jpg" alt="Smart intersection aerial telemetry view with illuminated crosswalk lanes"></figure></div>
   </div>
+  <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
 </section>
 
 <section id="controllers" class="controllers-section page bg-white">
@@ -108,6 +132,7 @@
     </article>
     <article class="controller-block mt-8 border-t border-gray-200 pt-8"><div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12"><div class="lg:col-span-8"><h3 class="controller-title">SW 200 ITG NETWORKING CONTROLLER</h3><p class="controller-copy">This is an intelligent wetworking controller under partnership with Chinese company. The controller is a 48-output intelligent with 32 bit ARM microprocessor 6 U modular control and drive. It has a 19-inch rack-mounted case, and uses standardized NTCP communication protocol and supports network remote control and various control strategies.</p><dl class="controller-specs"><div><dt>Material</dt><dd>&nbsp;</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="white-swatch"></span>White, <span class="oak-swatch"></span>Light Oak, <span class="walnut-swatch"></span>Walnut</dd></div></dl></div><figure class="controller-image lg:col-span-4"><img src="images/sw200-networking-cabinet-open.jpg" alt="SW 200 ITG networking controller open industrial cabinet"></figure></div></article>
   </div>
+  <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
 </section>
 
     <section id="infrastructure" class="overhead-infrastructure page bg-white">
@@ -140,6 +165,7 @@
           </div>
         </article>
       </div>
+      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
     </section>
 
     <section id="accessories-portfolio" class="accessories-portfolio page bg-white">
@@ -179,10 +205,10 @@
         </article>
 
       </div>
+      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
     </section>
 
     <section id="energy" class="page bg-gstCream">
-      <div class="section-banner"><h2>ENERGY &amp; POWER SYSTEMS</h2><div class="section-banner-logo hidden sm:block"><img src="images/global-suntech.png" alt="Global Suntech"></div></div>
       <div class="mx-auto max-w-7xl px-5 py-14 lg:px-10">
         <article class="energy-inverter-panel reveal">
           <div class="energy-heading"><h3>INVERTER SYSTEMS</h3><span></span></div>
@@ -212,7 +238,6 @@
               </div>
             </div>
           </section>
-          <div class="energy-brandbar"><span>Global Suntech | Smart Signals. Everyday.</span><span>www.globalsuntech-zw.com</span></div>
         </article>
         <article class="energy-storage-panel reveal">
           <div class="energy-heading"><h3>ENERGY STORAGE SYSTEMS</h3><span></span></div>
@@ -244,6 +269,7 @@
           </section>
         </article>
       </div>
+      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
     </section>
 
     <section id="lighting" class="page bg-white">
@@ -300,11 +326,11 @@
             </div>
           </section>
         </article>
-      <div class="disclaimer"><div class="tagline">Global Suntech | Smart Signals. Everyday.</div><div class="legal">Lighting performance depends on photometric design, mounting height, optics, operating environment and final project specification.</div></div>
+      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
     </section>
   </main>
 
-  <footer id="contact" class="bg-gstDark text-white"><div class="mx-auto max-w-7xl px-5 py-16 lg:px-10"><div><p class="eyebrow text-gstYellow">PAGE 13 / ENQUIRY CONTACT</p><h2 class="display mt-3 text-5xl font-bold">Let's build<br>what's next.</h2><div class="mt-9 space-y-3 text-sm text-white/75"><p>✉ <a class="hover:text-gstYellow" href="mailto:technical@globalzw-itech.com">technical@globalzw-itech.com</a></p><p>☎ <a class="hover:text-gstYellow" href="tel:+263710421953">0710 421 953</a> · 24/7</p><p>📍 7 Faber Rd, Bluffhill, Harare, Zimbabwe</p><p>🏢 Group head office — 35 Woburn Avenue, Benoni, South Africa</p><p>Website: <a class="hover:text-gstYellow" href="https://www.globalzw-itech.com">https://www.globalzw-itech.com</a></p></div></div></div><div class="disclaimer"><div class="tagline">Global Suntech | Smart Signals. Everyday.</div><div class="legal">&copy; 2026 Global Suntech. Product information is subject to change without prior notice. Errors and omissions excepted.</div></div></footer>
+  <footer id="contact" class="bg-gstDark text-white"><div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:px-10"><div><p class="eyebrow text-gstYellow">PAGE 13 / ENQUIRY CONTACT</p><h2 class="display mt-3 text-5xl font-bold">Let's build<br>what's next.</h2><div class="mt-9 space-y-3 text-sm text-white/75"><p>✉ <a class="hover:text-gstYellow" href="mailto:technical@globalzw-itech.com">technical@globalzw-itech.com</a></p><p>☎ <a class="hover:text-gstYellow" href="tel:+263710421953">0710 421 953</a> · 24/7</p><p>📍 7 Faber Rd, Bluffhill, Harare, Zimbabwe</p><p>🏢 Group head office — 35 Woburn Avenue, Benoni, South Africa</p><p>Website: <a class="hover:text-gstYellow" href="https://www.globalzw-itech.com">https://www.globalzw-itech.com</a></p></div></div><div class="flex justify-center lg:justify-end"><img src="images/global-suntech.png" alt="Global Suntech logo" class="w-56 max-w-full object-contain brightness-0 invert sm:w-72"></div></div><div class="disclaimer"><div class="tagline">Global Suntech | Smart Signals. Everyday.</div><div class="legal">&copy; 2026 Global Suntech. Product information is subject to change without prior notice. Errors and omissions excepted.</div></div></footer>
   <script src="script.js"></script>
 </body>
 </html>

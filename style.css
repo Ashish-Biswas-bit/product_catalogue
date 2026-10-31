@@ -1,5 +1,7 @@
 html { scroll-behavior: smooth; }
 body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
+.site-header { transition: transform .3s ease; }
+.site-header.nav-hidden { transform: translateY(-100%); }
 .display { font-family: "Playfair Display", Georgia, serif; }
 .page { min-height: 100vh; position: relative; scroll-margin-top: 0; }
 .section-banner { background: #00a651; color: #fff; padding: 1.1rem clamp(1.25rem, 5vw, 5rem); display: flex; justify-content: space-between; align-items: center; }
@@ -22,6 +24,16 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
   .cover { padding-top: 1.5rem; }
 }
 .hero-footer { position: relative; width: 100%; }
+.section-disclaimer { display: grid; width: 100%; grid-template-columns: 35% 65%; }
+.section-disclaimer-tagline,
+.section-disclaimer-copy { display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+.section-disclaimer-tagline { background: #0B5327; padding: .75rem 1.25rem; font-size: .875rem; font-weight: 600; }
+.section-disclaimer-copy { background: #00B140; padding: .75rem 2rem; font-size: 11px; line-height: 1.35; }
+@media (max-width: 767px) {
+  .section-disclaimer { grid-template-columns: 1fr; }
+  .section-disclaimer-tagline,
+  .section-disclaimer-copy { padding: .75rem 1.25rem; }
+}
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 .product-card { transition: transform .25s ease, box-shadow .25s ease; }
