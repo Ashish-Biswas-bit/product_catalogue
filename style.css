@@ -129,3 +129,40 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
   *, *:before, *:after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Improve readability across the traffic dashboard modules. */
+.traffic-dashboard-section .gui-topbar,
+.traffic-dashboard-section .gui-status { font-size: .78rem; }
+.traffic-dashboard-section .gui-sidebar { font-size: .8rem; }
+.traffic-dashboard-section .gui-badge { font-size: .72rem; }
+.traffic-dashboard-section .network-card h3 { font-size: 1.5rem; }
+.traffic-dashboard-section .network-card ul { font-size: .88rem; }
+.traffic-dashboard-section .strategy-panel h3,
+.traffic-dashboard-section .rolling-panel h3 { font-size: 1.55rem; }
+.traffic-dashboard-section .strategy-panel section b,
+.traffic-dashboard-section .rolling-panel h4 { font-size: .88rem; }
+.traffic-dashboard-section .strategy-panel ul,
+.traffic-dashboard-section .rolling-panel ul { font-size: .9rem; }
+.traffic-dashboard-section .sim-legend { font-size: .72rem; }
+.traffic-dashboard-section .monitor-tab { font-size: .84rem; }
+.traffic-dashboard-section .live-window { font-size: .8rem; }
+.traffic-dashboard-section .live-window small { font-size: .72rem; }
+.traffic-dashboard-section .operations-grid span,
+.traffic-dashboard-section .action-card ul { font-size: .88rem; }
+.traffic-dashboard-section .report-card h3 { font-size: 1.45rem; }
+.traffic-dashboard-section .metric-row,
+.traffic-dashboard-section .metric-stack { font-size: .86rem; }
+.traffic-dashboard-section .chart-labels { font-size: .64rem; }
+.traffic-dashboard-section .benefit-item,
+.traffic-dashboard-section .benefit-subpanel ul,
+.traffic-dashboard-section .assessment-list span { font-size: .88rem; }
+.traffic-overview h2 { font-size: 1.65rem; }
+.traffic-overview > div > div:nth-child(2) > p:first-of-type { font-size: .95rem; line-height: 1.75; }
+.traffic-overview > div > div:nth-child(2) > ul { font-size: .95rem; }
+.traffic-overview > div > div:nth-child(2) > p:last-of-type { font-size: .9rem; line-height: 1.65; }
+@media (min-width: 768px) {
+  .traffic-overview h2 { font-size: 2rem; }
+  .traffic-overview > div > div:nth-child(2) > p:first-of-type,
+  .traffic-overview > div > div:nth-child(2) > ul { font-size: 1rem; }
+  .traffic-overview > div > div:nth-child(2) > p:last-of-type { font-size: 1rem; }
+}
