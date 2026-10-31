@@ -140,6 +140,16 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
 .storage-image img { width: 100%; height: 100%; min-height: 18rem; object-fit: contain; }
 .storage-product { display: flex; flex-direction: column; }
 .storage-badge { padding: .7rem 1rem; background: #1a4d2e; color: #fff; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
+.electrical-systems-panel { background: #fff; padding: 2rem; box-shadow: 0 8px 22px rgba(17,24,39,.06); }
+.electrical-master { border-top: 3px solid #00a651; }
+.electrical-intro { display: grid; gap: 1.25rem; color: #1e3a8a; font-size: 1rem; line-height: 1.8; }
+.electrical-image { display: flex; min-height: 16rem; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #e5e7eb; background: #fff; }
+.electrical-image img { width: 100%; height: 100%; min-height: 16rem; object-fit: contain; }
+.electrical-subsection { margin-top: 2.5rem; }
+.electrical-grid { margin-top: 1.25rem; }
+@media (max-width: 640px) {
+  .electrical-systems-panel { padding: 1.25rem; }
+}
 @media (max-width: 640px) {
   .energy-inverter-panel { padding: 1.25rem; }
   .energy-storage-panel { padding: 1.25rem; }
