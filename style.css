@@ -12,6 +12,8 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
 .disclaimer .tagline { display: flex; align-items: center; background: #00a651; color: #fff; flex: .8; padding: .7rem 1.25rem; font-weight: 700; }
 .disclaimer .legal { background: #f5c518; color: #222; flex: 1.8; padding: .7rem 1rem; }
 .cover { min-height: 100vh; padding-top: 3.25rem; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #123d29; }
+.cover h1 { width: 100%; max-width: 100%; font-size: clamp(2.5rem, 11vw, 8rem) !important; line-height: .95; overflow-wrap: anywhere; }
+.cover > .relative { width: 100%; max-width: 100%; }
 .cover-split { position: absolute; inset: 3.25rem 0 0; background: linear-gradient(90deg, rgba(0,0,0,.2), rgba(0,0,0,.52)), url("images/hero-solar-farm.jpg") left center/56% 100% no-repeat, url("images/hero-smart-city.jpg") right center/56% 100% no-repeat; }
 .cover-split:after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 39%, rgba(12,65,41,.75) 40%, rgba(12,65,41,.35) 60%, transparent 61%); }
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
@@ -147,8 +149,16 @@ body { font-family: "Open Sans", Arial, sans-serif; color: #111827; }
 .electrical-image img { width: 100%; height: 100%; min-height: 16rem; object-fit: contain; }
 .electrical-subsection { margin-top: 2.5rem; }
 .electrical-grid { margin-top: 1.25rem; }
+.led-lights-panel { margin-top: 4rem; background: #fff; padding: 2rem; box-shadow: 0 8px 22px rgba(17,24,39,.06); }
+.led-master { border-top: 3px solid #00a651; }
+.led-intro { display: grid; gap: 1.25rem; color: #1e3a8a; font-size: 1rem; line-height: 1.8; }
+.led-image { display: flex; min-height: 18rem; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #e5e7eb; background: #fff; }
+.led-image img { width: 100%; height: 100%; min-height: 18rem; object-fit: contain; }
+.led-subsection { margin-top: 2.5rem; }
+.led-grid { margin-top: 1.25rem; }
 @media (max-width: 640px) {
   .electrical-systems-panel { padding: 1.25rem; }
+  .led-lights-panel { padding: 1.25rem; }
 }
 @media (max-width: 640px) {
   .energy-inverter-panel { padding: 1.25rem; }
