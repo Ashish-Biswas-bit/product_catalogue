@@ -1,336 +1,121 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Global Suntech product catalogue: Solar-Electrical-Smart-Signals.">
-  <title>Global Suntech | Product Catalogue</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: {
-      colors: { gstGreen: "#00a651", gstDark: "#1a4d2e", gstYellow: "#f5c518", gstCream: "#f8f5e8" },
-      fontFamily: { display: ["Playfair Display", "Georgia", "serif"], body: ["Open Sans", "Arial", "sans-serif"] }
-    } } };
-  </script>
+  <meta name="description" content="Global Suntech lighting and traffic products catalogue.">
+  <title>Global Suntech | Lighting Product Catalogue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100">
-  <header class="site-header sticky top-0 z-50 bg-[#0B5327] text-white shadow-md">
-    <div class="relative mx-auto flex max-w-7xl items-center justify-end px-5 py-5 lg:px-10">
-      <button id="nav-toggle" type="button" class="rounded border border-white/40 px-3 py-2 md:hidden" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
-        <span class="block h-0.5 w-6 bg-white transition-transform"></span>
-        <span class="mt-1.5 block h-0.5 w-6 bg-white transition-opacity"></span>
-        <span class="mt-1.5 block h-0.5 w-6 bg-white transition-transform"></span>
-      </button>
-      <nav id="site-nav" class="absolute left-0 right-0 top-full hidden bg-[#0B5327] px-5 py-4 md:absolute md:left-1/2 md:right-auto md:top-1/2 md:block md:w-max md:-translate-x-1/2 md:-translate-y-1/2 md:bg-transparent md:p-0" aria-label="Primary navigation">
-        <ul class="flex flex-col gap-3 text-sm font-semibold md:flex-row md:items-center md:justify-center md:gap-6">
-          <li><a class="transition hover:text-[#f5c518]" href="#traffic">Traffic Management</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#signal-heads">Signal Heads</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#controllers">Controllers</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#infrastructure">Infrastructure</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#accessories-portfolio">Accessories</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#energy">Energy</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#lighting">Lighting</a></li>
-          <li><a class="transition hover:text-[#f5c518]" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body>
   <main>
-    <section id="cover" class="page cover relative flex min-h-[55vh] w-full flex-col items-center justify-center overflow-hidden text-center text-white md:min-h-[75vh]">
-      <video class="cover-video absolute inset-0 z-0 h-full w-full object-cover" autoplay muted loop playsinline preload="metadata" poster="images/hero-smart-city.jpg" aria-label="Global Suntech traffic, solar, LED lighting, and engineering showcase"><source src="assets/hero-background.mp4" type="video/mp4"></video>
-      <div class="cover-overlay" aria-hidden="true"></div>
-      <div class="relative z-20 px-5"><img class="hero-logo" src="images/global-suntech.png" alt="Global Suntech logo"><h1 class="display mt-1 text-6xl font-bold tracking-wide sm:text-8xl md:text-9xl">PRODUCT<br>CATALOGUE</h1></div>
-    </section>
-    <div class="hero-footer grid grid-cols-1 md:grid-cols-[35%_65%]">
-      <div class="flex items-center justify-center bg-[#0B5327] px-5 py-3 text-center text-sm font-semibold text-white md:py-4">Global Suntech | Smart Signals. Everyday.</div>
-      <div class="flex items-center justify-center bg-[#00B140] px-5 py-3 text-center text-[11px] leading-snug text-white md:px-8 md:py-4">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div>
-    </div>
-
-    <section id="traffic" class="traffic-overview page bg-white">
-      <div class="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 p-6 md:p-12 lg:grid-cols-12">
-        <figure class="overflow-hidden rounded-2xl shadow-sm lg:col-span-3">
-          <img src="images/traffic-corridor-real.jpg" alt="" class="aspect-[4/5] h-full w-full object-cover">
-        </figure>
-        <div class="lg:col-span-6">
-          <div class="flex items-start gap-4">
-            <span class="mt-1 h-16 w-2 shrink-0 bg-gstGreen" aria-hidden="true"></span>
-            <div class="w-full">
-              <h2 class="text-3xl font-extrabold tracking-tight text-blue-900 md:text-4xl">TRAFFIC MANAGEMENT SYSTEMS</h2>
-              <div class="mt-4 h-px w-full bg-gstGreen" aria-hidden="true"></div>
-            </div>
-          </div>
-          <p class="mt-8 text-base font-medium leading-8 text-blue-900 md:text-lg">Our traffic management system are not comparable to state of the art systems, which gives full central traffic management GUI eith incidents, devices, dashboards CCTV, VMS and integrates with ITC controller and other real intelligent controllers. Through these systems like</p>
-          <ul class="mt-4 grid grid-cols-1 gap-1 text-base font-bold text-blue-900 md:text-lg">
-            <li class="flex items-center gap-3"><span class="h-2.5 w-2.5 shrink-0 bg-blue-900" aria-hidden="true"></span>SCATS</li>
-            <li class="flex items-center gap-3"><span class="h-2.5 w-2.5 shrink-0 bg-blue-900" aria-hidden="true"></span>SCOOT</li>
-            <li class="flex items-center gap-3"><span class="h-2.5 w-2.5 shrink-0 bg-blue-900" aria-hidden="true"></span>Yunex</li>
-            <li class="flex items-center gap-3"><span class="h-2.5 w-2.5 shrink-0 bg-blue-900" aria-hidden="true"></span>Omnia</li>
-            <li class="flex items-center gap-3"><span class="h-2.5 w-2.5 shrink-0 bg-blue-900" aria-hidden="true"></span>Yunex</li>
-            <li class="flex items-center gap-3"><span class="h-2.5 w-2.5 shrink-0 bg-blue-900" aria-hidden="true"></span>Kapsch</li>
+    <section id="solar-series" class="catalog-page">
+      <div class="page-topline"><span>01</span><span>GLOBAL SUNTECH</span><span>Lighting Product Catalogue</span></div>
+      <div class="section-title">
+        <p class="kicker">Series type</p>
+        <h2>Streetlights</h2>
+        <p class="section-code">SP / SY / SH SERIES DESIGN TY</p>
+      </div>
+      <div class="feature-layout">
+        <div class="feature-image dark-image">
+          <img src="images/led-streetlights.webp" alt="LED streetlights installed along a road">
+          <span class="image-label">SP / SY / SH<br>Solar Streetlight System</span>
+        </div>
+        <div class="feature-content">
+          <h3>Product List</h3>
+          <div class="model-list"><strong>Series</strong><strong>Models</strong><span>SY Series</span><span>SY -80, SY -100</span><span>SH Series</span><span>SH-100-M, SH-120-M</span><span>SP Series</span><span>SP-150, SP-200-A, SP-200</span></div>
+          <h3>Key Features</h3>
+          <ul class="check-list">
+            <li>Separate solar panel and lamp assembly.</li>
+            <li>Monocrystalline silicon solar cells.</li>
+            <li>Long-life LiFePO4 battery.</li>
+            <li>Patented bat-wing lens.</li>
+            <li>IPC 5.0 intelligent power control.</li>
+            <li>Weather-responsive discharge management.</li>
+            <li>Battery, charging and load indicators.</li>
+            <li>Software and hardware battery protection.</li>
+            <li>Remote-control lighting modes.</li>
           </ul>
-          <p class="mt-8 border-l-4 border-gstGreen pl-5 text-lg font-bold leading-8 text-blue-900 md:text-xl">Our systems are able to do city-wide coordination for the whole city, enabling smart intersection, smart corridor, and smart plan.</p>
         </div>
-        <figure class="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-white shadow-sm lg:col-span-3">
-          <img src="images/traffic-coordination-diagram.png" alt="" class="h-full w-full object-contain">
-        </figure>
       </div>
-      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
+      <div class="data-grid">
+        <div><h3>Installation</h3><dl><dt>Mounting Height</dt><dd>5–10 m, depending on model</dd><dt>Pole-Top Diameter</dt><dd>60 mm</dd><dt>Installation Spacing</dt><dd>20–40 m</dd></dl></div>
+        <div><h3>Lighting Performance</h3><dl><dt>LED Power Range</dt><dd>20–70 W</dd><dt>Luminous Flux</dt><dd>3,400–12,000 lm</dd><dt>System Efficacy</dt><dd>Up to 160 lm/W</dd><dt>Colour Temperature</dt><dd>6000–7500 K</dd><dt>Colour Rendering</dt><dd>Ra ≥ 70</dd><dt>Beam Options</dt><dd>150° × 70°<br>155° × 55°<br>160° × 45°</dd><dt>LED Lifespan</dt><dd>50,000 hours</dd><dt>Protection Rating</dt><dd>IP65</dd><dt>Operating Temperature</dt><dd>−20 °C to +60 °C</dd></dl></div>
+        <div><h3>Solar Panel &amp; Battery</h3><dl><dt>Panel Type</dt><dd>Monocrystalline silicon</dd><dt>Panel Power Range</dt><dd>60–200 W</dd><dt>Panel Voltage</dt><dd>6 V / 18 V</dd><dt>Solar Cell Efficiency</dt><dd>17–20%</dd><dt>Battery Type</dt><dd>LiFePO4</dd><dt>Battery Energy</dt><dd>192–640 Wh</dd><dt>Battery Cycle Life</dt><dd>More than 2,000 cycles</dd><dt>Rainy-Day Operation</dt><dd>5–7 days, brochure claim</dd></dl></div>
+      </div>
+      <div class="note"><strong>System Design</strong><p>The all-in-two configuration separates the solar panel from the lighting assembly, simplifying transport, installation and maintenance.</p><small>Technical note: Values are series-wide ranges. The extracted brochure table does not clearly preserve every model-to-specification relationship. Confirm individual model configurations before ordering. Model numbers are not LED wattage ratings. Rainy-day operation depends on lighting mode, battery state and solar conditions.</small></div>
+      <footer class="page-footer"><span>GLOBAL SUNTECH<br><small>ITS and Power Systems</small></span><span>Lighting Product Catalogue<br>Page 1</span></footer>
     </section>
 
-<section id="traffic-dashboard-section" class="traffic-dashboard-section page bg-gstCream">
-  <div class="mx-auto max-w-7xl px-5 py-14 lg:px-10">
-    <div class="dashboard-heading"><span></span><div><p class="eyebrow">CENTRAL TRAFFIC MANAGEMENT</p><h2 class="display">INTEGRATED GUI</h2></div></div>
-    <div class="gui-layout mt-6">
-      <div class="gui-console"><div class="gui-topbar"><b>GLOBAL SUNTECH / TRAFFIC CONTROL</b><span>● SYSTEM ONLINE</span></div><div class="gui-body"><div class="gui-sidebar"><span>NETWORK</span><b>Overview</b><b>Junctions</b><b>Corridors</b><b>Devices</b><b>Dashboards</b><b>CCTV</b><b>VMS</b></div><div class="gui-map"><i class="map-node node-a">J-01</i><i class="map-node node-b">J-12</i><i class="map-node node-c">J-28</i><i class="map-node node-d">J-43</i><div class="gui-badge badge-web">WEB Technology</div><div class="gui-badge badge-desktop">Virtual Desktop</div><div class="gui-badge badge-interface">Many ITS One Interface</div><div class="gui-badge badge-views">System Views</div><div class="gui-badge badge-device">Device Specific Views</div></div></div><div class="gui-status"><span>Controllers 431</span><span>Available 24.37%</span><span>Alarms 36</span><span>Last sync 09:42:18</span></div></div>
-      <aside class="network-card"><p class="eyebrow">GIS NETWORK VIEW</p><h3>The network at your fingertips - do everything you need from wherever you are</h3><div class="network-map"><i>01</i><i>02</i><i>03</i><i>04</i></div><ul><li>Smart intersection status</li><li>Corridor progression</li><li>Incident and device layers</li></ul></aside>
-    </div>
-
-    <div class="mt-16"><div class="dashboard-heading"><span></span><div><p class="eyebrow">ADAPTIVE CONTROL ENGINE</p><h2 class="display">AI POWERED ADAPTIVE CONTROL</h2></div></div><div class="adaptive-layout mt-6">
-      <article class="strategy-panel"><h3>AI powered Adaptive Traffic Control - The network at your fingertips</h3><section><b>Control Strategies</b><ul><li>Fully Adaptive Control</li><li>Traffic actuated Plan Selection</li><li>Time based Plan Selection</li><li>Traffic Responsive Control</li></ul></section><section><b>Built-in Machine Learning</b><ul><li>Coordinated global strategy</li><li>Different control strategies in different areas</li><li>Different control strategies in different ToD / DoW</li><li>Fastest recovery of incidents or congestions</li></ul></section></article>
-      <div class="junction-sim"><div class="priority-label">Priority to Emergency and Special Vehicles</div><div class="junction-road horizontal"></div><div class="junction-road vertical"></div><div class="lane-arrow arrow-left">←</div><div class="lane-arrow arrow-right">→</div><div class="lane-arrow arrow-up">↑</div><div class="lane-arrow arrow-down">↓</div><span class="vehicle vehicle-one">▰</span><span class="vehicle vehicle-two">▰</span><span class="vehicle vehicle-three">▰</span><span class="counter counter-one">42</span><span class="counter counter-two">18</span><span class="counter counter-three">31</span><div class="sim-legend"><span>● Traffic counts, delays and stops estimates</span><span>● Prediction of Arrivals</span><span>● Priority vehicles</span></div></div>
-      <article class="rolling-panel"><h3>Rolling horizon optimization</h3><div class="timeline"><span class="active-plan">Active control plan</span><span class="reference-plan">Reference plan</span></div><h4>Deep Learning cycle elements</h4><ul><li>Time spent by vehicles on the incoming links</li><li>Vehicles on the incoming links stopped by queues</li><li>Exceeding queue</li><li>Time spent on the outgoing links by leaving vehicles</li><li>Time spent by PT vehicles assigned with priority</li><li>Deviation from the previous signal setting</li></ul><h4>Optimization inputs and solution</h4><ul><li>Last cycle</li><li>External input (PT and Area control)</li><li>Cycle adjusted to area control</li><li>Arrivals profile</li><li>Coordinate with downstream controllers</li><li>Reinforcement Learning based Optimum Solution</li></ul></article>
-    </div></div>
-
-    <div class="mt-16"><div class="dashboard-heading"><span></span><div><p class="eyebrow">LIVE VISIBILITY</p><h2 class="display">DIAGNOSTIC MONITORING &amp; VISIBILITY</h2></div></div><div class="monitoring-shell mt-6"><div class="monitor-tabs" role="tablist"><button class="monitor-tab active" data-monitor="diagnostic">Diagnostic Monitoring</button><button class="monitor-tab" data-monitor="operations">Operations Monitoring</button><button class="monitor-tab" data-monitor="realtime">Real-time Monitoring</button><button class="monitor-tab" data-monitor="traffic-live">Traffic Monitoring</button><button class="monitor-tab" data-monitor="control">Operations Control</button></div><div class="monitor-content"><div class="monitor-panel active" id="diagnostic"><div class="live-window"><b>Signal phase diagrams</b><span class="signal-phase"><i></i><i></i><i></i><i></i></span><small>J-01 / phase 04 / fault free</small></div><div class="live-window"><b>Intersection lane telemetry grids</b><div class="telemetry-grid"><i>J-01</i><i>J-12</i><i>J-28</i><i>J-43</i><i>OK</i><i>OK</i><i>WARN</i><i>OK</i></div></div><div class="live-window"><b>CCTV traffic feeds</b><div class="cctv-scene"><span>CAM 01</span><span>CAM 02</span><span>CAM 03</span></div></div><div class="live-window"><b>Map checkpoints</b><div class="checkpoint-map"><i>CP-01</i><i>CP-02</i><i>CP-03</i></div></div></div><div class="monitor-panel" id="operations"><div class="operations-grid"><b>Operations Monitoring</b><span>Network throughput <strong>86%</strong></span><span>Junction plans <strong>32 active</strong></span><span>Coordinated corridors <strong>14</strong></span><span>Priority requests <strong>08</strong></span></div></div><div class="monitor-panel" id="realtime"><div class="operations-grid"><b>Real-time Monitoring</b><span>Active incidents <strong>04</strong></span><span>Average delay <strong>18 sec</strong></span><span>Arrivals prediction <strong>94%</strong></span><span>Detector availability <strong>99.1%</strong></span></div></div><div class="monitor-panel" id="traffic-live"><div class="operations-grid"><b>Traffic Monitoring</b><span>Vehicles inbound <strong>2,481</strong></span><span>Vehicles outbound <strong>2,176</strong></span><span>Stops estimate <strong>312</strong></span><span>Travel time index <strong>1.18</strong></span></div></div><div class="monitor-panel" id="control"><div class="operations-grid"><b>Operations Control</b><span>Controllers online <strong>431</strong></span><span>Available <strong>24.37%</strong></span><span>Not available <strong>75.63%</strong></span><span>Open alarms <strong>36</strong></span></div></div></div></div></div>
-
-    <div class="mt-16"><div class="dashboard-heading"><span></span><div><p class="eyebrow">BUSINESS INTELLIGENCE</p><h2 class="display">REPORTING</h2></div></div><div class="reporting-grid mt-6"><article class="report-card report-ring"><p class="eyebrow">BUSINESS INTELLIGENCE</p><h3>Controllers Total with alarms/alarms</h3><div class="ring-chart"><b>431<small>CONTROLLERS</small></b></div><div class="metric-row"><span>New alarms <b>162</b></span><span>Ack alarms <b>135</b></span></div></article><article class="report-card"><p class="eyebrow">ORGANIZATION FIT</p><h3>Organization fit reporting</h3><div class="bar-chart"><i style="height:42%"><b>42</b></i><i style="height:68%"><b>68</b></i><i style="height:54%"><b>54</b></i><i style="height:82%"><b>82</b></i><i style="height:61%"><b>61</b></i><i style="height:92%"><b>92</b></i></div><div class="chart-labels"><span>Traffic</span><span>Energy</span><span>Safety</span><span>Field</span><span>GUI</span><span>AI</span></div></article><article class="report-card"><p class="eyebrow">OPERATIONAL CAPACITY</p><h3>Operational circular tracking metrics</h3><div class="capacity-chart"><b>100%<small>CAPACITY</small></b></div><div class="metric-stack"><span>Controllers: <b>431</b></span><span>Available: <b>24.37%</b></span><span>Not available: <b>75.63%</b></span></div></article><article class="report-card action-card"><p class="eyebrow">DECISION SUPPORT</p><h3>Actionable Insight</h3><ul><li>Review new alarms: <b>162</b></li><li>Prioritize 36 active controller alarms</li><li>Investigate 75.63% unavailable status</li><li>Coordinate field response from the network view</li></ul></article></div></div>
-
-    <div class="mt-16"><div class="dashboard-heading"><span></span><div><p class="eyebrow">OUTCOMES &amp; ARCHITECTURE</p><h2 class="display">BENEFITS</h2></div></div><div class="benefits-grid mt-6"><article class="benefit-column"><h3>Leading Edge Algorithms</h3><div class="benefit-item"><b>Investment</b><span>Solid base for connected and automated future</span></div><div class="benefit-item"><b>Costs</b><span>Reduced engineering/planning efforts in advance</span></div><div class="benefit-item"><b>Safety</b><span>Fast reaction to incidents/unforeseen events</span></div><div class="benefit-item"><b>Environment</b><span>Reduced carbon footprint</span></div><div class="benefit-subpanel"><h4>Unique Selling Points</h4><ul><li>Real time predictive capacity optimization</li><li>Considers all modes of transport</li><li>Model based</li><li>AI powered Rolling horizon</li><li>V2X ready; traffic light assistant natively supported</li></ul></div></article><article class="benefit-column"><h3>Quality and Robustness</h3><ul class="benefit-checks"><li>High system availability</li><li>High system performance</li><li>High fault tolerance</li><li>Communication availability</li><li>Detectors availability</li></ul><div class="benefit-subpanel"><h4>Flexible solution architecture</h4><ul><li>Weighted priority for PT and Special vehicles</li><li>Hardware manufacturer agnostic (40+ TLC)</li><li>Multimodal support</li><li>Distributed intelligence over Hierarchical and Open architecture</li><li>Scalability (from small to large systems)</li></ul></div></article><article class="benefit-column"><h3>Assessments &amp; Open Communication Protocols</h3><div class="assessment-list"><span>Travel time reduction by <b>10-25%</b></span><span>Delay reduction by <b>15-35%</b></span><span>Stops reduction by <b>10-30%</b></span><span>Public Transport travel time reduction by <b>28%</b></span><span>Fuel consumption reduction by <b>8-10%</b></span></div><div class="benefit-subpanel"><h4>Open Communication Protocol</h4><ul><li><b>OPEN APIs:</b> Not a "Black box", scalable, XML, JSON, etc.</li><li><b>STATE OF THE ART TECHNOLOGY:</b> Restful API (Social Media Technology)</li><li><b>RICH SECURITY FEATURE:</b> OAuth Authorisation/Authentication</li><li><b>PROVEN INTEGRATION:</b> Integration with many systems, worldwide; E.g. Bosch, Milestone, Wavetronix, Genetec, Telegra</li></ul></div></article></div></div>
-  </div>
-  <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
-</section>
-
-<section id="signal-heads" class="signal-heads-section page bg-white">
-  <div class="mx-auto max-w-7xl px-6 py-12 md:px-12">
-    <div class="signal-section-heading"><h2>SIGNAL HEADS</h2><span></span></div>
-    <div class="mt-10 grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
-      <figure class="signal-blueprint lg:col-span-3"><img src="images/signal-heads-blueprint-vector.png" alt="Signal heads front and side technical drawing"></figure>
-      <div class="lg:col-span-6"><p class="signal-description">Modern LED signal with more than 15 year lifespan. They suitable for cities, tollgate, and similar applications. The sizes are 100mm, 200mm, and 300mm. A special size is a combination of 300mm+ 200mm with inbuilt counter.</p><dl class="signal-meta"><div><dt>Material</dt><dd>UV-stabilized poly-carbonate</dd></div><div><dt>Dimension</dt><dd>100, 200, 300mm; and combination</dd></div><div><dt>LED Colors</dt><dd><span class="swatch red"></span>Red, <span class="swatch yellow"></span>Yellow, <span class="swatch green"></span>Green.</dd></div></dl></div>
-      <figure class="signal-mosaic lg:col-span-3"><img src="images/signal-heads-variants-mosaic.jpg" alt="Signal heads product variants mosaic"></figure>
-    </div>
-
-    <div class="signal-product mt-16"><div class="signal-product-heading"><h3>LED RG PEDESTRIAN</h3></div><div class="mt-6 grid grid-cols-1 items-center gap-6 md:grid-cols-3"><div class="signal-spec-copy"><p>High efficient RG signal head featuring 200 mm RG with countdown timer. It is designed to meet high standards of efficiency and durability.</p><dl class="signal-meta compact"><div><dt>Material</dt><dd>UV-stabilized poly carbonate to withstand mechanical stress and adverse weather.</dd></div><div><dt>Dimension</dt><dd>200 mm</dd></div><div><dt>Available Colors</dt><dd>Red, Green</dd></div></dl></div><figure class="signal-product-image"><img src="images/led-rg-pedestrian-display.jpg" alt="LED RG pedestrian display with countdown timer"></figure><figure class="signal-product-image"><img src="images/smart-crosswalk-nightview.jpg" alt="Smart crosswalk night view"></figure></div></div>
-
-    <div class="signal-product mt-16"><div class="signal-product-heading"><h3>LED 300 RYG + INBUILT COUNTER</h3></div><div class="mt-6 grid grid-cols-1 items-center gap-8 lg:grid-cols-12"><div class="signal-spec-copy lg:col-span-5"><p>High efficient RYG signal head featuring 300 mm with inbuilt countdoown timer three colour. It is designed to meet high standards of efficiency and durability.</p><dl class="signal-meta compact"><div><dt>Material</dt><dd>UV-stabilized poly carbonate to withstand mechanical stress and adverse weather.</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="swatch red"></span>Red, <span class="swatch yellow"></span>Yellow, <span class="swatch green"></span>Green</dd></div></dl></div><div class="signal-asset-matrix lg:col-span-7"><figure><img src="images/ryg-inbuilt-counter-hardware.jpg" alt="RYG inbuilt counter hardware with digital clock"></figure><figure><img src="images/ryg-casing-blueprint-cad.png" alt="RYG casing blueprint CAD side profile"></figure><div class="dimension-table"><p>Dimension</p><table><tbody><tr><th>X</th><th>2K</th><th>3K</th><th>PC 70</th><th>PC 175</th><th>AL 105</th><th>AL 185</th><th>AL 240</th></tr></tbody></table></div></div></div></div>
-    <div class="signal-product smart-pedestrian-product mt-16"><div class="signal-product-heading"><h3>SMART PEDESTRIAN</h3></div><div class="mt-6 grid grid-cols-1 items-start gap-8 md:grid-cols-12"><figure class="smart-pedestrian-image md:col-span-3"><img src="images/smart-pedestrian-pushbutton-box.jpg" alt="Smart pedestrian pushbutton boxes with PLEASE WAIT walking symbols"></figure><div class="signal-spec-copy md:col-span-6"><p>The smart pedestrian utilizes the physical pedestrian crossings, improving the way of crossing through smart technology. This is more suitable in towns, cities and schools. Global Suntech is a leader in implementing this technology.</p><dl class="signal-meta compact"><div><dt>Material</dt><dd>UV-stabilized poly-carbonate</dd></div><div><dt>Dimension</dt><dd>100, 200, 300mm; and combination</dd></div><div><dt>LED Colors</dt><dd><span class="swatch red"></span>Red, <span class="swatch green"></span>Green</dd></div></dl></div><figure class="smart-pedestrian-image md:col-span-3"><img src="images/smart-crosswalk-perspective-night.jpg" alt="Smart pedestrian nighttime urban crosswalk"></figure></div><figure class="smart-aerial-image mt-8"><img src="images/smart-intersection-aerial-telemetry.jpg" alt="Smart intersection aerial telemetry view with illuminated crosswalk lanes"></figure></div>
-  </div>
-  <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
-</section>
-
-<section id="controllers" class="controllers-section page bg-white">
-  <div class="mx-auto max-w-7xl px-6 py-12 md:px-12">
-    <article class="controller-block mt-10">
-      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
-        <div class="lg:col-span-8"><h3 class="controller-title">INTELLIGENT TRAFFIC CONTROLLER</h3><p class="controller-copy">Supplied in partnership with Swarco Technology, Denmark. It has inbuilt algorithms and protocols that interface with traffic management software worldwide, including SCATS, SCOOT, NTCIP, Omnia, RSMP, STREAMS, CCOL and many others</p><dl class="controller-specs"><div><dt>Material</dt><dd>Varying</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="wood-swatch"></span>Natural Wood, <span class="white-swatch"></span>White, <span class="black-swatch"></span>Black</dd></div></dl></div>
-        <figure class="controller-image lg:col-span-4"><img src="images/intelligent-traffic-controller-rack.jpg" alt="Intelligent Traffic Controller rack-mounted cabinet with digital telemetry screen"></figure>
-      </div>
-      <div class="grid grid-cols-1 items-center gap-8 py-8 lg:grid-cols-12"><figure class="controller-image lg:col-span-4"><img src="images/itc-open-cabinet-wiring.jpg" alt="Open industrial cabinet with internal electrical relays, terminal blocks and wiring tracks"></figure><div class="lg:col-span-8"><div class="controller-subheading"><h4>WHAT THE CONTROLLER DOES</h4><span></span></div><ul class="controller-checklist"><li>Control Room Access to all junctions from a central location.</li><li>Remote Monitoring and Control - accessible through web-based platform .</li><li>Real-time adaptive control and city wide coordination</li></ul><dl class="controller-specs"><div><dt>Material</dt><dd>Hot dip galvanised, mild steel</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="silver-swatch"></span>Silver, <span class="black-swatch"></span>Black, <span class="orange-swatch"></span>Orange</dd></div></dl></div></div>
-    </article>
-    <article class="controller-block mt-8 border-t border-gray-200 pt-8"><div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12"><div class="lg:col-span-8"><h3 class="controller-title">SW 200 ITG NETWORKING CONTROLLER</h3><p class="controller-copy">This is an intelligent wetworking controller under partnership with Chinese company. The controller is a 48-output intelligent with 32 bit ARM microprocessor 6 U modular control and drive. It has a 19-inch rack-mounted case, and uses standardized NTCP communication protocol and supports network remote control and various control strategies.</p><dl class="controller-specs"><div><dt>Material</dt><dd>&nbsp;</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="white-swatch"></span>White, <span class="oak-swatch"></span>Light Oak, <span class="walnut-swatch"></span>Walnut</dd></div></dl></div><figure class="controller-image lg:col-span-4"><img src="images/sw200-networking-cabinet-open.jpg" alt="SW 200 ITG networking controller open industrial cabinet"></figure></div></article>
-  </div>
-  <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
-</section>
-
-    <section id="infrastructure" class="overhead-infrastructure page bg-white">
-      <div class="mx-auto max-w-7xl px-6 py-12 md:px-12">
-        <article class="overhead-product grid grid-cols-1 items-center gap-8 py-6 lg:grid-cols-12">
-          <figure class="overhead-image lg:col-span-4"><img src="images/overhead-pole-vector-structure.png" alt="Overhead pole vector structure with yellow cantilever traffic pole and base plates"></figure>
-          <div class="lg:col-span-8">
-            <h2 class="overhead-title">OVERHEAD POLES</h2>
-            <p class="overhead-copy">We do standard tubular and octagonal poles. The design is performed utilizing computer software to analyze pole shaft, cantilever arm, base plates. All poles receive final yellow at site.</p>
-            <dl class="overhead-specs"><div><dt>Material</dt><dd>V.</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="silver-swatch"></span>Silver, <span class="yellow-swatch"></span>Yellow</dd></div></dl>
-          </div>
-        </article>
-        <article class="overhead-product grid grid-cols-1 items-center gap-8 border-t border-gray-100 py-6 lg:grid-cols-12">
-          <div class="lg:col-span-7">
-            <h2 class="overhead-title">OVERHEAD POLE</h2>
-            <p class="overhead-copy">We do standard tubular and octagonal poles. The design is performed utilizing computer software to analyze pole shaft, cantilever arm, base plates. All poles receive final yellow at site.</p>
-            <dl class="overhead-specs"><div><dt>Material</dt><dd>&nbsp;</dd></div><div><dt>Dimension</dt><dd>&nbsp;</dd></div><div><dt>Available Colors</dt><dd><span class="yellow-swatch"></span>Yellow, <span class="silver-swatch"></span>Silver</dd></div></dl>
-          </div>
-          <figure class="overhead-image lg:col-span-5"><img src="images/overhead-signal-elevation-blueprint.png" alt="Overhead signal elevation blueprint with cantilever arm and countdown display"></figure>
-        </article>
-        <article class="overhead-product grid grid-cols-1 items-end gap-8 border-t border-gray-100 pt-6 lg:grid-cols-12">
-          <figure class="overhead-image lg:col-span-4"><img src="images/standard-pole-real-world-deployment.jpg" alt="Standard pole real-world urban traffic signal deployment"></figure>
-          <div class="lg:col-span-8">
-            <h2 class="overhead-title">STANDARD POLE WITH FRAME</h2>
-            <p class="overhead-copy">We do standard poles 110 mm diameter tubular with height of 3.3m to 4m. The poles are hot dip galvanized.</p>
-            <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
-              <dl class="overhead-specs"><div><dt>Material</dt><dd>mild steel</dd></div><div><dt>Dimension</dt><dd>110mm diameter, 3.3m</dd></div><div><dt>Available Colors</dt><dd><span class="yellow-swatch"></span>Yellow, <span class="silver-swatch"></span>Silver</dd></div></dl>
-              <figure class="overhead-frame-image"><img src="images/mounting-frame-bracket-spec.png" alt="Mounting frame bracket dimensioned specification drawing"></figure>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
-    </section>
-
-    <section id="accessories-portfolio" class="accessories-portfolio page bg-white">
-      <div class="mx-auto max-w-7xl px-6 py-12 md:px-12">
-        <div class="accessories-heading"><h2>ACCESSORIES</h2><span></span></div>
-        <p class="accessories-intro">We sell a wide range of accessories in solar, electrical and traffic signals. Our services go beyond selling but to supplying.</p>
-        <div class="accessories-feature-grid">
-          <figure class="accessories-feature-image"><img src="images/traffic-systems-green-icon.png" alt="Traffic systems green signal icon"></figure>
-          <figure class="accessories-feature-image"><img src="images/countdown-orange-icon.png" alt="Countdown orange signal icon"></figure>
+    <section id="aio" class="catalog-page pale-page">
+      <div class="page-topline"><span>02</span><span>GLOBAL SUNTECH</span><span>Lighting Product Catalogue</span></div>
+      <div class="section-title"><p class="kicker">AIO type streetlights</p><h2>Integrated Solar Lighting</h2><p class="section-code">All-in-one type</p></div>
+      <div class="feature-layout">
+        <div class="feature-image">
+          <img src="images/highway-burst.png" alt="Solar streetlight illuminating a highway at night">
+          <span class="image-label">AIO / Integrated<br>Solar Lighting</span>
         </div>
-
-        <article class="accessory-category">
-          <div class="accessories-heading"><h3>TRAFFIC SIGNAL ACCESSORIES</h3><span></span></div>
-          <div class="accessory-grid traffic-accessory-grid">
-            <figure class="accessory-card"><img src="images/signal-lenses-set.jpg" alt="Set of red yellow and green traffic signal lenses"></figure>
-            <figure class="accessory-card"><img src="images/backing-box-housing.jpg" alt="Industrial heavy-duty black backing box module hardware"></figure>
-            <figure class="accessory-card"><img src="images/mounting-bolt-rod.jpg" alt="Metallic structural threading support screw rod mounting pin"></figure>
-            <figure class="accessory-card"><img src="images/protective-housing-optics.jpg" alt="Transparent curved protective outer cover lens glass caps"></figure>
-            <figure class="accessory-card"><img src="images/radar-sensor-enclosure.jpg" alt="Pole-mounted blue pedestrian notification radar sensor module box"></figure>
-            <figure class="accessory-card"><img src="images/aspect-gasket-seal.png" alt="Black rubberized multi-aspect weather sealing gasket frame"></figure>
-            <figure class="accessory-card"><img src="images/polycarbonate-bezel-mask.png" alt="Oval three-aspect polycarbonate front mask bezel frame"></figure>
-            <figure class="accessory-card"><img src="images/digital-aspect-counters.jpg" alt="Digital aspect counters showing red green and amber countdowns"></figure>
-            <figure class="accessory-card"><img src="images/textured-red-lens.jpg" alt="Textured ruby red traffic reflector lens replacement plate"></figure>
-            <figure class="accessory-card"><img src="images/mounting-bracket-technical-cad.png" alt="Mounting frame bracket technical CAD layout"></figure>
-            <figure class="accessory-card"><img src="images/pedestrian-call-boxes-pair.jpg" alt="Pair of yellow pedestrian manual push-button call boxes"></figure>
-          </div>
-        </article>
-
-        <article class="accessory-category">
-          <div class="accessories-heading"><h3>ELECTRICAL &amp; SOLAR</h3><span></span></div>
-          <div class="accessory-grid electrical-accessory-grid">
-            <figure class="accessory-card"><img src="images/solar-charge-controller.jpg" alt="Blue smart solar charge controller module with terminal blocks and cooling fins"></figure>
-            <figure class="accessory-card"><img src="images/armored-copper-signal-cable.jpg" alt="Industrial underground armored transmission cable with exposed copper strands"></figure>
-            <figure class="accessory-card"><img src="images/industrial-inverter-pack.jpg" alt="Blue industrial hybrid solar inverter or distribution module"></figure>
-            <figure class="accessory-card"><img src="images/high-flux-led-floodlight.jpg" alt="Outdoor stadium high-flux LED floodlight assembly"></figure>
-          </div>
-        </article>
-
+        <div class="feature-content"><h3>Key Features</h3><ul class="check-list"><li>Integrated solar lighting assembly with a high-efficiency panel.</li><li>Grade A LiFePO4 battery.</li><li>Multi-peak MPPT charging technology.</li><li>IPC 5.0 intelligent power management.</li><li>Modular battery and LED components.</li><li>Anti-corrosion aluminum housing.</li><li>Battery capacity indicators.</li><li>Remote-selectable lighting modes.</li></ul></div>
       </div>
-      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
+      <div class="data-grid three-col"><div><h3>Lighting &amp; Protection</h3><dl><dt>System Efficacy</dt><dd>Greater than 160 lm/W</dd><dt>Colour Temperature</dt><dd>3000–7500 K</dd><dt>Colour Rendering</dt><dd>Ra ≥ 70</dd><dt>LED Lifespan</dt><dd>50,000 hours</dd><dt>Protection Rating</dt><dd>IP65</dd><dt>Operating Temperature</dt><dd>−20 °C to +60 °C</dd><dt>Charging Temperature</dt><dd>Above 0 °C</dd></dl></div><div><h3>Solar &amp; Battery System</h3><dl><dt>Solar Panel Type</dt><dd>Monocrystalline silicon</dd><dt>Solar Cell Efficiency</dt><dd>22–24%</dd><dt>Panel Power Range</dt><dd>42–150 W</dd><dt>Battery Chemistry</dt><dd>Grade A LiFePO4</dd><dt>Battery Energy Range</dt><dd>144–960 Wh</dd><dt>Battery Capacity Range</dt><dd>45–300 Ah</dd><dt>Installation Spacing</dt><dd>20–40 m</dd></dl></div><div><h3>Operating Modes</h3><dl><dt>DEMO</dt><dd>Light on for one minute for testing</dd><dt>OFF</dt><dd>Light off, day or night</dd><dt>L Mode</dt><dd>100% for 2 h; 70% for 2 h; 30% until dawn</dd><dt>T Mode</dt><dd>100% for 3 h; 50% for 2 h; 20% for 6 h; 50% for 1 h before dawn</dd><dt>M Mode</dt><dd>Whole-night operation at reduced output power</dd><dt>U Mode</dt><dd>Highlight mode; timed output boost</dd><dt>Default Mode</dt><dd>T mode</dd></dl></div></div>
+      <div class="note"><strong>Battery Management</strong><p>The brochure describes software and hardware protection, current equalisation, and intelligent discharge planning. Battery capacity retention is stated as 90% after 2,000 cycles under the manufacturer’s test conditions.</p></div>
+      <div class="table-wrap"><h3>Series Type Product List</h3><table><thead><tr><th>Model</th><th>Solar Panel</th><th>Luminous Flux</th><th>Battery</th><th>Mounting Height</th></tr></thead><tbody><tr><td>AIO-40</td><td>42 W</td><td>4,000 lm</td><td>144 Wh / 45 Ah</td><td>4–6 m</td></tr><tr><td>AIO-60</td><td>60 W</td><td>6,000 lm</td><td>240 Wh / 75 Ah</td><td>6–7 m</td></tr><tr><td>AIO-80</td><td>90 W</td><td>10,000 lm</td><td>384 Wh / 120 Ah</td><td>6–8 m</td></tr><tr><td>AIO-120</td><td>120 W</td><td>15,000 lm</td><td>640 Wh / 200 Ah</td><td>8–10 m</td></tr><tr><td>AIO-150</td><td>150 W</td><td>18,000 lm</td><td>960 Wh / 300 Ah</td><td>10–12 m</td></tr></tbody></table></div>
+      <footer class="page-footer"><span>GLOBAL SUNTECH<br><small>ITS and Power Systems</small></span><span>Lighting Product Catalogue<br>Page 2</span></footer>
     </section>
 
-    <section id="energy" class="page bg-gstCream">
-      <div class="mx-auto max-w-7xl px-5 py-14 lg:px-10">
-        <article class="energy-inverter-panel reveal">
-          <div class="energy-heading"><h3>INVERTER SYSTEMS</h3><span></span></div>
-          <div class="energy-master grid grid-cols-1 items-start gap-8 py-6 lg:grid-cols-12">
-            <figure class="energy-image lg:col-span-4"><img src="images/central-power-inverter-enclosure.jpg" alt="ATESS heavy industrial inverter system container cabinet"></figure>
-            <div class="lg:col-span-8">
-              <p class="energy-copy">We supply and install a wide range of high quality inverters and PCS systems for both grid connected and off-grid systems. Our brands include: ATESS, Sunsynk, Victron, Deye, Solis, Sigenergy and many more</p>
-            </div>
-          </div>
-          <section class="energy-subsection">
-            <div class="energy-heading compact"><h4>PCS SYSTEMS</h4><span></span></div>
-            <div class="energy-pcs-grid grid grid-cols-1 items-end gap-6 md:grid-cols-3">
-              <figure class="energy-image"><img src="images/atess-pcs-cabinet-left.jpg" alt="ATESS single-cabinet white industrial PCS unit"></figure>
-              <figure class="energy-image"><img src="images/transformer-high-voltage-warning.png" alt="High-voltage transformer substation graphic with red danger triangle"></figure>
-              <figure class="energy-image"><img src="images/atess-commercial-pcs-right.jpg" alt="ATESS double-cabinet industrial PCS container unit"></figure>
-            </div>
-          </section>
-          <section class="energy-subsection">
-            <div class="energy-heading compact"><h4>HYBRID INVERTERS</h4><span></span></div>
-            <div class="energy-hybrid-grid grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
-              <figure class="energy-image lg:col-span-4"><img src="images/commercial-hybrid-inverter-large.jpg" alt="ATESS standalone floor-mounted hybrid inverter storage system cabinet"></figure>
-              <div class="energy-brand-grid grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-8 lg:grid-cols-4">
-                <figure class="energy-image"><img src="images/victron-energy-inverter.jpg" alt="Victron Blue Power rectangular inverter unit"></figure>
-                <figure class="energy-image"><img src="images/sunsynk-hybrid-inverter.jpg" alt="White commercial Sunsynk smart hybrid inverter panel"></figure>
-                <figure class="energy-image"><img src="images/deye-hybrid-inverter.jpg" alt="Dark grey vertical Deye hybrid inverter unit"></figure>
-                <figure class="energy-image"><img src="images/sigenergy-home-inverter.jpg" alt="White modular Sigenergy residential hybrid inverter chassis"></figure>
-              </div>
-            </div>
-          </section>
-        </article>
-        <article class="energy-storage-panel reveal">
-          <div class="energy-heading"><h3>ENERGY STORAGE SYSTEMS</h3><span></span></div>
-          <div class="storage-master grid grid-cols-1 items-start gap-8 py-6 lg:grid-cols-12">
-            <figure class="storage-image lg:col-span-4"><img src="images/freedom-won-hv.png" alt="Freedom Won Lite 40/320 HV Battery cabinet"></figure>
-            <div class="lg:col-span-8">
-              <p class="storage-copy">We supply and install a wide range of high quality battery storage for domestic, industrial and commercial systems. Our brands include: Freedom Won, Sunsynk, Shoto, Dyness, Hubble, Deye, and many more</p>
-            </div>
-          </div>
-          <section class="storage-subsection">
-            <div class="energy-heading compact"><h4>HV AND HV+ STORAGE</h4><span></span></div>
-            <div class="storage-hv-grid grid grid-cols-1 items-end gap-6 md:grid-cols-3">
-              <figure class="storage-image"><img src="images/hv-stacked-rack.png" alt="Modular stacked high-voltage rack battery installation with interconnected wiring"></figure>
-              <div class="storage-product">
-                <figure class="storage-image"><img src="images/hubble-tower.png" alt="Hubble Lithium black battery storage server rack tower"></figure>
-                <p class="storage-badge">Hubble Lithium</p>
-              </div>
-              <figure class="storage-image"><img src="images/white-rack.png" alt="White open-frame industrial battery server rack tower"></figure>
-            </div>
-          </section>
-          <section class="storage-subsection">
-            <div class="energy-heading compact"><h4>LV STORAGE BATTERIES</h4><span></span></div>
-            <div class="storage-lv-grid grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <figure class="storage-image"><img src="images/lite-10-8-lv.png" alt="Freedom Won Lite 10/8 Lithium Battery wall-mounted unit"></figure>
-              <figure class="storage-image"><img src="images/sunsynk-lv.png" alt="Sunsynk smart low-voltage wall-mounted battery pack"></figure>
-              <figure class="storage-image"><img src="images/horizontal-battery.png" alt="Horizontal rack-mountable low-voltage lithium battery pack with brackets"></figure>
-              <div class="storage-product"><figure class="storage-image"><img src="images/unlimited-cycles-module.png" alt="Unlimited Cycles compact wall-hung smart battery unit"></figure><p class="storage-badge">UNLIMITED CYCLES</p></div>
-            </div>
-          </section>
-        </article>
+    <section id="floodlights" class="catalog-page">
+      <div class="page-topline"><span>03</span><span>GLOBAL SUNTECH</span><span>Lighting Product Catalogue</span></div>
+      <div class="section-title"><p class="kicker">F3 LED floodlights</p><h2>AC-Powered Area Lighting</h2><p class="section-code">MODEL ST -F3-400W</p></div>
+      <div class="feature-layout">
+        <div class="feature-image dark-image"><img src="images/high-flux-led-floodlight.jpg" alt="High-output LED floodlight"><span class="image-label">F3 High-Output<br>LED Floodlight</span></div>
+        <div class="feature-content"><h3>Key Features</h3><ul class="check-list"><li>Universal 100–277 V AC input.</li><li>Die-cast ADC12 aluminium housing.</li><li>IP66 dust and water protection.</li><li>Multiple narrow and wide beam options.</li><li>High-power-factor LED driver.</li><li>20 kV surge protection stated in key features.</li><li>Optional dimming and sensor controls.</li><li>Suitable for outdoor wet locations.</li></ul><h3>Applications</h3><ul class="inline-list"><li>Roads and large outdoor areas.</li><li>Billboards and building illumination.</li><li>Tunnels, bridges and culverts.</li><li>Public squares and general area lighting.</li></ul></div>
       </div>
-      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
+      <div class="data-grid three-col"><div><h3>Optional Controls</h3><dl><dt>Dimming</dt><dd>0–10 V / PWM / DALI</dd><dt>Sensors</dt><dd>Photocell / microwave motion sensor</dd><dt>NEMA Receptacle</dt><dd>Optional 3-pin, 5-pin or 7-pin</dd><dt>LED Brands</dt><dd>San’an standard; Osram, Philips and others optional</dd></dl></div><div><h3>Electrical &amp; Construction</h3><dl><dt>Model</dt><dd>ST -F3-480W</dd><dt>Input Voltage</dt><dd>100–277 V AC</dd><dt>Frequency</dt><dd>50 / 60 Hz</dd><dt>Power Supply Efficiency</dt><dd>Greater than 92%</dd><dt>Power Factor</dt><dd>≥ 0.95</dd><dt>THD</dt><dd>≤ 10% at 220–240 V AC</dd><dt>Protection Rating</dt><dd>IP66</dd><dt>Housing Material</dt><dd>Die-cast ADC12 aluminium</dd><dt>Net Weight</dt><dd>15 kg; 17 kg with hood cover</dd><dt>Operating Temperature</dt><dd>−40 °C to +60 °C</dd><dt>Humidity Range</dt><dd>10–90% RH</dd></dl></div><div><h3>Lighting Performance</h3><dl><dt>Efficacy Options</dt><dd>110–160 lm/W</dd><dt>Listed Luminous Flux</dt><dd>55,000–80,000 lm, ±5%</dd><dt>Colour Temperature</dt><dd>2700–5700 K, adjustable as listed</dd><dt>Colour Rendering</dt><dd>Ra &gt; 70</dd><dt>LED Package Options</dt><dd>3535 / 3030 / 5050</dd><dt>Beam Options</dt><dd>7°, 15°, 30°, 60°, 90°, 120°</dd><dt>Road Optics</dt><dd>T2M / T3M / T4M, configuration-dependent</dd><dt>Listed Lifetime</dt><dd>More than 50,000 hours</dd></dl></div></div>
+      <footer class="page-footer"><span>GLOBAL SUNTECH<br><small>ITS and Power Systems</small></span><span>Lighting Product Catalogue<br>Page 3</span></footer>
     </section>
 
-    <section id="lighting" class="page bg-white">
-      <div class="mx-auto max-w-7xl px-5 py-14 lg:px-10">
-        <article class="electrical-systems-panel reveal">
-          <div class="energy-heading"><h3>ELECTRICAL SYSTEMS</h3><span></span></div>
-          <div class="electrical-master grid grid-cols-1 items-center gap-8 py-6 lg:grid-cols-12">
-            <figure class="electrical-image lg:col-span-4"><img src="images/filament-test.png" alt="Retro carbon filament bulbs glowing on an industrial test bench"></figure>
-            <div class="electrical-intro lg:col-span-8">
-              <p>We do supply a wide range of electrical equipment, accessories and services to cater for industrial and domestic clients.</p>
-              <figure class="electrical-image"><img src="images/switch-group.png" alt="Modular electrical control switches green indicator lights relays and contactor blocks"></figure>
-            </div>
+    <section class="catalog-page pale-page optical-page">
+      <div class="page-topline"><span>04</span><span>GLOBAL SUNTECH</span><span>Lighting Product Catalogue</span></div>
+      <div class="section-title"><p class="kicker">F3 LED floodlights</p><h2>Optical Configurations</h2></div>
+      <div class="optical-hero"><img src="images/isolated-fixtures.png" alt="LED lighting fixtures"><p>Configure the light output for every road, structure and open area.</p></div>
+      <div class="table-wrap"><table><thead><tr><th>Efficiency</th><th>Luminous Flux</th><th>LED Package</th><th>Lens Type</th></tr></thead><tbody><tr><td>110 lm/W</td><td>55,000 lm ±5%</td><td>3535</td><td>4-in-one</td></tr><tr><td>120 lm/W</td><td>60,000 lm ±5%</td><td>3030</td><td>12-in-one</td></tr><tr><td>140 lm/W</td><td>70,000 lm ±5%</td><td>3030</td><td>16-in-one</td></tr><tr><td>150 lm/W</td><td>75,000 lm ±5%</td><td>5050</td><td>4-in-one</td></tr><tr><td>160 lm/W</td><td>80,000 lm ±5%</td><td>3030</td><td>24-in-one</td></tr></tbody></table></div>
+      <div class="note"><small>Technical note: This is an AC-powered floodlight, not a solar streetlight. The source identifies the model as ST -F3-480W, but its listed flux and efficacy combinations imply approximately 500 W; confirm rated input power. The brochure also lists both 3-year and 5-year warranties. Confirm the applicable warranty, optical configuration and electrical ratings before ordering.</small></div>
+      <footer class="page-footer"><span>GLOBAL SUNTECH<br><small>ITS and Power Systems</small></span><span>Lighting Product Catalogue<br>Page 4</span></footer>
+    </section>
+
+    <section id="traffic-lights" class="traffic-catalogue">
+      <div class="traffic-heading"><p class="kicker">Global Suntech / Smart Signals. Everyday.</p><h2>Signal Heads</h2><p>Modern LED signal with more than 15 year lifespan. They suitable for cities, tollgate, and similar applications.</p></div>
+      <div class="traffic-product-grid">
+        <article class="traffic-product traffic-product-wide">
+          <div class="traffic-product-image"><img src="images/signal-heads-variants-mosaic.jpg" alt="Modern LED traffic signal head variants"></div>
+          <div class="traffic-product-copy">
+            <p class="kicker">Signal heads</p>
+            <h3>Modern LED Signal Heads</h3>
+            <p>Modern LED signal with more than 15 year lifespan. They suitable for cities, tollgate, and similar applications. The sizes are 100mm, 200mm, and 300mm. A special size is a combination of 300mm+ 200mm with inbuilt counter.</p>
+            <dl class="traffic-specs"><dt>Material</dt><dd>UV-stabilized poly-carbonate</dd><dt>Dimension</dt><dd>100, 200, 300mm; and combination</dd><dt>LED Colors</dt><dd>Red / Yellow / Green</dd></dl>
           </div>
-          <section class="electrical-subsection">
-            <div class="energy-heading compact"><h4>POWER &amp; DISTRIBUTION</h4><span></span></div>
-            <div class="electrical-grid grid grid-cols-1 gap-6 md:grid-cols-3">
-              <figure class="electrical-image"><img src="images/breaker-box-close.png" alt="Wired power breaker box with circuit breakers busbars and guided wiring"></figure>
-              <figure class="electrical-image"><img src="images/open-cabinet.png" alt="Open industrial metal distribution cabinet with busbars and breakers"></figure>
-              <figure class="electrical-image"><img src="images/terminal-blocks.png" alt="Industrial terminal blocks with wire connections on a DIN rail"></figure>
-            </div>
-          </section>
-          <section class="electrical-subsection">
-            <div class="energy-heading compact"><h4>SWITCHGEAR</h4><span></span></div>
-            <div class="electrical-grid grid grid-cols-1 gap-6 md:grid-cols-3">
-              <figure class="electrical-image"><img src="images/mccb-switch.png" alt="Grey industrial molded case circuit breaker switchgear component"></figure>
-              <figure class="electrical-image"><img src="images/relay-tracks.png" alt="Switchgear internal wiring tracks colorful terminal blocks and relays"></figure>
-              <figure class="electrical-image"><img src="images/orange-switchgear.png" alt="Orange industrial switchgear control panel cabinet with open door"></figure>
-            </div>
-          </section>
         </article>
-        <article class="led-lights-panel reveal">
-          <div class="energy-heading"><h3>LED LIGHTS</h3><span></span></div>
-          <div class="led-master grid grid-cols-1 items-center gap-8 py-6 lg:grid-cols-12">
-            <figure class="led-image lg:col-span-4"><img src="images/highway-burst.png" alt="Night highway street lights with warm light bursts and vehicle trails"></figure>
-            <div class="led-intro lg:col-span-8">
-              <p>LED street lights have a lifespan of up to 50,000 hours, which is much longer than the lifespan of HPS street lights. This means that LED street lights require less maintenance and replacement, which can further save municipalities money</p>
-              <figure class="led-image"><img src="images/isolated-fixtures.png" alt="Commercial LED streetlight heads and multi-LED matrix floodlight collage"></figure>
-            </div>
-          </div>
-          <section class="led-subsection">
-            <div class="energy-heading compact"><h4>TOWER LIGHTS</h4><span></span></div>
-            <div class="led-grid grid grid-cols-1 gap-6 md:grid-cols-3">
-              <figure class="led-image"><img src="images/stadium-mast.png" alt="High-mast stadium lighting tower at twilight"></figure>
-              <figure class="led-image"><img src="images/circular-ring-6led.png" alt="Circular high-mast ring with six bright LED floodlights"></figure>
-              <figure class="led-image"><img src="images/night-mast-palm.png" alt="Night stadium high-mast floodlight pole with palm trees"></figure>
-            </div>
-          </section>
-          <section class="led-subsection">
-            <div class="energy-heading compact"><h4>STREETLIGHTS</h4><span></span></div>
-            <div class="led-grid grid grid-cols-1 gap-6 md:grid-cols-3">
-              <figure class="led-image"><img src="images/dual-arm-highway.png" alt="Dual-arm highway streetlight installation at twilight"></figure>
-              <figure class="led-image"><img src="images/starburst-pole.png" alt="Night streetlight pole with bright starburst LED head"></figure>
-              <figure class="led-image"><img src="images/curved-dual-arms.png" alt="Curved dual-arm streetlight framework with warm urban light halos"></figure>
-            </div>
-          </section>
+        <article class="traffic-product">
+          <div class="traffic-product-image"><img src="images/ryg-inbuilt-counter-hardware.jpg" alt="300 RYG LED signal head with inbuilt counter"></div>
+          <div class="traffic-product-copy"><p class="kicker">LED 300 RYG + inbuilt counter</p><h3>LED 300 RYG + Inbuilt Counter</h3><p>High efficient RYG signal head featuring 300 mm with inbuilt countdown timer three colour. It is designed to meet high standards of efficiency and durability.</p><dl class="traffic-specs"><dt>Material</dt><dd>UV-stabilized poly carbonate to withstand mechanical stress and adverse weather.</dd><dt>Dimension</dt><dd>300 mm</dd><dt>Available Colors</dt><dd>Red / Yellow / Green</dd></dl></div>
         </article>
-      <div class="section-disclaimer"><div class="section-disclaimer-tagline">Global Suntech | Smart Signals. Everyday.</div><div class="section-disclaimer-copy">Disclaimer: Subject to any applicable laws from time to time: (1) All the product images shown in this catalogue are for marketing purposes and may differ from the actual product. (2) All factual information in this catalogue was correct at the time of going to print and is subject to change without prior notice. Errors and Omissions Excepted. Global Suntech and its marketing Agency do not accept responsibility or liability for any incorrect listing of any merchandise or information.</div></div>
+        <article class="traffic-product">
+          <div class="traffic-product-image"><img src="images/led-rg-pedestrian-display.jpg" alt="200 mm RG pedestrian signal with countdown timer"></div>
+          <div class="traffic-product-copy"><p class="kicker">LED RG pedestrian</p><h3>LED RG Pedestrian</h3><p>High efficient RG signal head featuring 200 mm RG with countdown timer. It is designed to meet high standards of efficiency and durability.</p><dl class="traffic-specs"><dt>Material</dt><dd>UV-stabilized poly carbonate to withstand mechanical stress and adverse weather.</dd><dt>Dimension</dt><dd>200 mm</dd><dt>Available Colors</dt><dd>Red, Green</dd></dl></div>
+        </article>
+      </div>
+      <div class="traffic-heading smart-pedestrian-heading"><p class="kicker">Smart pedestrian</p><h2>Smart Pedestrian</h2><p>The smart pedestrian utilizes the physical pedestrian crossings, improving the way of crossing through smart technology. This is more suitable in towns, cities and schools. Global Suntech is a leader in implementing this technology.</p></div>
+      <article class="traffic-product smart-pedestrian-product">
+        <div class="traffic-product-image"><img src="images/pedestrian-signal-rg.png" alt="Smart pedestrian red and green signal"></div>
+        <div class="traffic-product-copy"><dl class="traffic-specs"><dt>Material</dt><dd>UV-stabilized poly-carbonate</dd><dt>Dimension</dt><dd>100, 200, 300mm; and combination</dd><dt>LED Colors</dt><dd>Red / Green</dd></dl></div>
+      </article>
+      </div>
     </section>
   </main>
-
-  <footer id="contact" class="bg-gstDark text-white"><div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:px-10"><div><p class="eyebrow text-gstYellow">PAGE 13 / ENQUIRY CONTACT</p><h2 class="display mt-3 text-5xl font-bold">Let's build<br>what's next.</h2><div class="mt-9 space-y-3 text-sm text-white/75"><p>✉ <a class="hover:text-gstYellow" href="mailto:technical@globalzw-itech.com">technical@globalzw-itech.com</a></p><p>☎ <a class="hover:text-gstYellow" href="tel:+263710421953">0710 421 953</a> · 24/7</p><p>📍 7 Faber Rd, Bluffhill, Harare, Zimbabwe</p><p>🏢 Group head office — 35 Woburn Avenue, Benoni, South Africa</p><p>Website: <a class="hover:text-gstYellow" href="https://www.globalzw-itech.com">https://www.globalzw-itech.com</a></p></div></div><div class="flex justify-center lg:justify-end"><img src="images/global-suntech.png" alt="Global Suntech logo" class="w-56 max-w-full object-contain brightness-0 invert sm:w-72"></div></div><div class="disclaimer"><div class="tagline">Global Suntech | Smart Signals. Everyday.</div><div class="legal">&copy; 2026 Global Suntech. Product information is subject to change without prior notice. Errors and omissions excepted.</div></div></footer>
+  <footer class="site-footer"><strong>GLOBAL SUNTECH</strong><span>ITS and Power Systems</span><span>Smart Signals. Everyday.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
