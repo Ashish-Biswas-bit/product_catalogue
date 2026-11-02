@@ -82,7 +82,9 @@ main{width:100%;min-width:0}
 /* Series streetlight brochure layout */
 .solar-series-page{--solar-green:#0a5c43;--solar-ink:#123b38;--solar-gold:#b38a45;--solar-line:#d8e0dc;--solar-muted:#60706d;padding:clamp(1.5rem,4vw,3.5rem);background:#f8faf8;box-shadow:0 10px 35px rgba(17,25,20,.06);font-family:"DM Sans",Arial,sans-serif}
 .solar-series-header{display:flex;align-items:flex-start}
-.solar-series-heading{border-left:8px solid var(--solar-green);padding-left:1.2rem}
+.solar-series-heading{min-width:0}
+.solar-series-title-row{display:flex;align-items:center;gap:16px;margin-bottom:.75rem;width:100%}
+.solar-series-accent{display:block;flex:0 0 8px;width:8px;height:40px;border-radius:2px;background:#064e3b}
 .solar-series-heading .kicker{margin:.55rem 0 0;color:#68807a;font-size:.68rem;letter-spacing:.14em}
 .solar-series-heading h3{margin:0;color:var(--solar-ink);font-size:clamp(2rem,4.7vw,4.2rem);font-weight:700;line-height:.98;letter-spacing:-.055em}
 .solar-series-rule{height:2px;margin:1.35rem 0 2rem;background:var(--solar-gold)}
@@ -116,11 +118,13 @@ main{width:100%;min-width:0}
 .solar-technical-note{margin-top:2.5rem;padding:1rem 1.2rem;border:1px solid #d8d8c8;background:#fffef5;color:#68736f;font-size:.72rem;line-height:1.6}
 .solar-technical-note strong{color:#4b5c57}
 @media(max-width:767px){.solar-series-grid{grid-template-columns:1fr}.solar-series-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.solar-series-page{padding:1.25rem}.solar-spec-block+.solar-spec-block{margin-top:1.7rem}}
-@media(max-width:420px){.solar-data-table{font-size:.72rem}.solar-data-table th,.solar-data-table td{padding:.55rem .5rem}.solar-series-heading{border-left-width:5px;padding-left:.8rem}}
+@media(max-width:420px){.solar-data-table{font-size:.72rem}.solar-data-table th,.solar-data-table td{padding:.55rem .5rem}}
 
 /* AIO integrated solar lighting brochure layout */
 .aio-page{--aio-green:#0a5c43;--aio-ink:#123b38;--aio-gold:#b38a45;--aio-line:#d8e0dc;--aio-muted:#60706d;padding:clamp(1.5rem,4vw,3.5rem);background:#f8faf8;box-shadow:0 10px 35px rgba(17,25,20,.06);font-family:"DM Sans",Arial,sans-serif}
-.aio-heading{border-left:8px solid var(--aio-green);padding-left:1.2rem}
+.aio-heading{min-width:0}
+.aio-title-row{display:flex;align-items:center;gap:16px;margin-bottom:.75rem;width:100%}
+.aio-accent{display:block;flex:0 0 8px;width:8px;height:40px;border-radius:2px;background:#064e3b}
 .aio-heading h3{margin:0;color:var(--aio-ink);font-size:clamp(2rem,4.7vw,4.2rem);font-weight:700;line-height:.98;letter-spacing:-.055em}
 .aio-heading p{margin:.65rem 0 0;color:var(--aio-green);font-size:.76rem;font-weight:700;letter-spacing:.14em}
 .aio-rule{height:2px;margin:1.35rem 0 2rem;background:var(--aio-gold)}
@@ -153,7 +157,7 @@ main{width:100%;min-width:0}
 .aio-table-scroll{overflow-x:auto}
 .aio-product-list .aio-data-table{min-width:42rem}
 .aio-product-list .aio-data-table td:first-child{font-weight:700;color:var(--aio-ink)}
-@media(max-width:767px){.aio-page{padding:1.25rem}.aio-heading{border-left-width:5px;padding-left:.8rem}.aio-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.aio-top-grid,.aio-mid-grid{grid-template-columns:1fr;gap:1.8rem}.aio-mid-grid{margin-top:2rem;padding-top:1.5rem}.aio-table-block+.aio-table-block{margin-top:1.7rem}.aio-product-list{margin-top:2rem;padding-top:1.5rem}}
+@media(max-width:767px){.aio-page{padding:1.25rem}.aio-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.aio-top-grid,.aio-mid-grid{grid-template-columns:1fr;gap:1.8rem}.aio-mid-grid{margin-top:2rem;padding-top:1.5rem}.aio-table-block+.aio-table-block{margin-top:1.7rem}.aio-product-list{margin-top:2rem;padding-top:1.5rem}}
 @media(max-width:420px){.aio-data-table{font-size:.72rem}.aio-data-table th,.aio-data-table td{padding:.55rem .5rem}}
 
 /* F3 floodlight brochure layout */
