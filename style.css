@@ -1,4 +1,4 @@
-:root{--ink:#17231c;--green:#006b45;--deep:#123d29;--acid:#b6d43b;--paper:#f4f6ef;--line:#cbd5cc;--muted:#59665e;--navy:#123B38;--card-width:1180px}
+﻿:root{--ink:#17231c;--green:#006b45;--deep:#123d29;--acid:#b6d43b;--paper:#f4f6ef;--line:#cbd5cc;--muted:#59665e;--navy:#123B38;--card-width:1180px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:#F4F6EF;color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.5;overflow-x:hidden}
@@ -273,4 +273,72 @@ main{width:100%;min-width:0}
   .e100-top-grid,.e100-monitoring-grid,.e100-tables{grid-template-columns:1fr;gap:1.5rem}
   .e100-coordination{margin-top:1rem}
   .e100-monitoring{margin-top:2.5rem}
+}
+
+.sw200-controller-page{border-top:1px solid #d1d5db}
+.sw200-controller-intro{padding-top:0}
+.sw200-top-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2.5rem,6vw,6rem);align-items:start}
+.sw200-product-image{display:flex;min-height:25rem;align-items:center;justify-content:center;margin:0;border:1px solid #dfe7dd;background:#f4f6ef;overflow:hidden}
+.sw200-product-image img{width:100%;height:100%;min-height:25rem;object-fit:contain}
+.sw200-modular-control{margin-top:1.5rem}
+.sw200-modular-control h3{letter-spacing:.04em;text-transform:uppercase}
+.sw200-features{margin-top:0}
+.sw200-features strong{color:#27342f}
+.sw200-control-modes{margin-top:clamp(3rem,6vw,5rem);padding-top:2rem;border-top:1px solid #d1d5db}
+.sw200-control-mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.5rem,4vw,4rem);margin-top:1.5rem}
+.sw200-control-mode-grid h4{margin:0;color:#59665e;font-size:.88rem;font-weight:700}
+.sw200-control-mode-grid p{margin:.25rem 0 1.5rem;color:#59665e;font-size:.84rem}
+.sw200-specifications{margin-top:clamp(3rem,6vw,5rem)}
+.sw200-specifications .traffic-controller-table-group{margin-top:0}
+.sw200-specifications .traffic-controller-table-group h3{padding:.75rem .5rem;border-top:1px solid #aebdb3;border-bottom:1px solid #aebdb3;color:#0a5c43}
+.sw200-specifications .traffic-controller-table-group table{table-layout:fixed}
+.sw200-specifications .traffic-controller-table-group th,.sw200-specifications .traffic-controller-table-group td{width:50%;padding:.7rem .75rem;border-bottom:1px solid #d5dfda}
+.sw200-specifications .traffic-controller-table-group th{color:#27342f}
+.sw200-specifications .traffic-controller-table-group td{color:#59665e}
+.sw200-specifications .traffic-controller-table-group tr:nth-child(odd) th,.sw200-specifications .traffic-controller-table-group tr:nth-child(odd) td{background:#fff}
+.sw200-specifications .traffic-controller-table-group tr:nth-child(even) th,.sw200-specifications .traffic-controller-table-group tr:nth-child(even) td{background:#eef6f7}
+
+@media(max-width:639px){
+  .sw200-controller-page{padding-top:2rem}
+  .sw200-controller-intro{padding-top:0}
+  .sw200-top-grid,.sw200-control-mode-grid{grid-template-columns:1fr;gap:1.5rem}
+  .sw200-features{margin-top:1rem}
+  .sw200-control-modes{margin-top:2.5rem}
+}
+
+.futura-ciway-page{border-top:1px solid #d1d5db}
+.futura-ciway-intro{padding-top:0}
+.futura-tagline{margin:.25rem 0 1.25rem;color:#59665e;font-size:.88rem;font-weight:700}
+.futura-product-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,5vw,5rem);max-width:54rem;margin:0 auto 3rem}
+.futura-product-preview figure{display:flex;min-height:22rem;align-items:center;justify-content:center;margin:0;border:1px solid #dfe7dd;background:#f4f6ef;overflow:hidden}
+.futura-product-preview img{width:100%;height:100%;min-height:22rem;object-fit:contain}
+.futura-specifications{margin-top:0}
+.futura-specifications h3,.futura-dimension-table h3{margin:0;padding:.75rem .5rem;border-top:1px solid #aebdb3;border-bottom:1px solid #aebdb3}
+.futura-specifications table,.futura-dimension-table table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.82rem}
+.futura-specifications th,.futura-specifications td,.futura-dimension-table th,.futura-dimension-table td{padding:.7rem .75rem;border-bottom:1px solid #d5dfda;text-align:left;vertical-align:top}
+.futura-specifications thead th,.futura-dimension-table thead th{background:#123b58;color:#fff;font-weight:700}
+.futura-specifications tbody th,.futura-dimension-table tbody th{color:#27342f}
+.futura-specifications tbody td,.futura-dimension-table tbody td{color:#59665e}
+.futura-specifications tbody tr:nth-child(odd) th,.futura-specifications tbody tr:nth-child(odd) td,.futura-dimension-table tbody tr:nth-child(odd) th,.futura-dimension-table tbody tr:nth-child(odd) td{background:#fff}
+.futura-specifications tbody tr:nth-child(even) th,.futura-specifications tbody tr:nth-child(even) td,.futura-dimension-table tbody tr:nth-child(even) th,.futura-dimension-table tbody tr:nth-child(even) td{background:#eef6f7}
+.futura-features-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,6vw,6rem);margin-top:clamp(3rem,6vw,5rem)}
+.futura-features-grid .traffic-controller-module{margin-top:0}
+.futura-dimensions{margin-top:clamp(3rem,6vw,5rem);padding-top:2rem;border-top:1px solid #d1d5db}
+.futura-schematics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,5vw,5rem);margin-top:1.5rem}
+.futura-schematics figure{margin:0;border:1px solid #dfe7dd;background:#f8fafc}
+.futura-schematics h4{margin:0;padding:.75rem;color:#59665e;font-size:.88rem;text-align:center}
+.futura-schematics img{width:100%;height:15rem;object-fit:contain}
+.futura-dimension-table{margin-top:clamp(3rem,6vw,5rem)}
+.futura-dimension-table h3{color:#0a5c43}
+.futura-metrics{display:flex;justify-content:space-between;gap:1rem;margin-top:clamp(3rem,6vw,5rem);padding-top:1rem;border-top:1px solid #123b58;color:#123b58;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.futura-metrics small{font-size:.68rem;letter-spacing:.04em}
+
+@media(max-width:639px){
+  .futura-ciway-page{padding-top:2rem}
+  .futura-ciway-intro{padding-top:0}
+  .futura-product-preview,.futura-features-grid,.futura-schematics{grid-template-columns:1fr;gap:1.5rem}
+  .futura-product-preview{margin-bottom:2rem}
+  .futura-product-preview figure,.futura-product-preview img{min-height:18rem}
+  .futura-dimension-table table,.futura-specifications table{font-size:.75rem}
+  .futura-metrics{display:grid;gap:.45rem}
 }
