@@ -204,6 +204,13 @@ main{width:100%;min-width:0}
 .pole-section-heading h3{font-size:48.64px}
 
 .traffic-controller-page{width:min(100%,1180px);margin:0 auto 2rem;padding:clamp(2rem,5vw,5rem);background:#fff;color:#27342f}
+.traffic-led-category-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(15rem,.48fr);align-items:center;gap:clamp(2rem,6vw,6rem);width:min(100%,1180px);margin:0 auto 2rem;padding:clamp(2.5rem,5vw,5rem);border-radius:1.75rem;background:#fff;box-shadow:0 10px 35px rgba(17,25,20,.08)}
+.traffic-led-category-copy{min-width:0}
+.traffic-led-category-kicker{margin:0 0 .85rem;color:#0a5c43;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.traffic-led-category-copy h2{margin:0;color:#27342f;font-size:clamp(2.6rem,5vw,4.7rem);font-weight:700;letter-spacing:-.07em;line-height:.9}
+.traffic-led-category-description{max-width:42rem;margin:1.5rem 0 0;color:#59665e;font-size:clamp(.95rem,1.5vw,1.08rem);line-height:1.7}
+.traffic-led-category-brand{display:flex;align-items:center;justify-content:flex-end}
+.traffic-led-category-brand img{width:min(17rem,100%);height:auto;object-fit:contain}
 .traffic-controller-header{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;padding-bottom:2rem;border-bottom:1px solid #cbd5cc}
 .traffic-controller-kicker{margin:0 0 .65rem;color:#0a5c43;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .traffic-controller-header h1{margin:0;color:#1c2522;font-size:clamp(2.4rem,5vw,4.8rem);font-weight:700;letter-spacing:-.06em;line-height:.95}
@@ -475,6 +482,9 @@ main{width:100%;min-width:0}
 .pedestrian-specifications tbody tr:nth-child(even) th,.pedestrian-specifications tbody tr:nth-child(even) td{background:#eef6f7}
 
 @media(max-width:639px){
+  .traffic-led-category-card{grid-template-columns:1fr;gap:1.5rem;padding:2rem 1.25rem;border-radius:1rem}
+  .traffic-led-category-brand{justify-content:center}
+  .traffic-led-category-brand img{width:min(13rem,75%)}
   .pedestrian-buttons-page{padding-top:2rem}
   .pedestrian-display-row{flex-direction:column;align-items:center;gap:1rem}
   .pedestrian-display-row figure,.pedestrian-display-row img{min-height:18rem}
@@ -516,3 +526,18 @@ main{width:100%;min-width:0}
   .traffic-poles-standard-grid img{height:20rem}
   .traffic-poles-overhead-specs table,.traffic-poles-standard-specs table{font-size:.75rem}
 }
+
+/* Product titles use one consistent catalog scale. */
+.led-intro-card .section-title h3,
+.floodlight-heading h3,
+.traffic-led-category-copy h2,
+.traffic-controller-intro h2,
+.futura-ciway-intro h2,
+.cy322-intro h2,
+.cl-led-intro h2,
+.countdown-timer-header h2,
+.pedestrian-buttons-header h2,
+.traffic-poles-header h2{font-size:32px}
+
+.led-intro-card .section-title h3,
+.traffic-led-category-copy h2{font-size:48.64px}
