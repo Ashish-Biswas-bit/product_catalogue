@@ -157,6 +157,7 @@ main{width:100%;min-width:0}
 .floodlight-heading p{margin:.65rem 0 0;color:var(--f3-green);font-size:.76rem;font-weight:700;letter-spacing:.1em}
 .floodlight-rule{height:2px;margin:1.35rem 0 2rem;background:var(--f3-gold)}
 .floodlight-top-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.floodlight-left,.floodlight-right{min-width:0}
 .floodlight-gallery{margin:0}
 .floodlight-gallery-main{height:clamp(14rem,23vw,20rem);overflow:hidden;background:#15221b}
 .floodlight-gallery-main img{width:100%;height:100%;object-fit:cover;mix-blend-mode:screen;opacity:.92}
@@ -170,14 +171,14 @@ main{width:100%;min-width:0}
 .floodlight-list li{position:relative;padding-left:1.1rem}
 .floodlight-list li::before{content:"";position:absolute;top:.58em;left:.15rem;width:.38rem;height:.38rem;border-radius:50%;background:var(--f3-green)}
 .floodlight-controls{margin-top:2.2rem}
-.floodlight-optical{margin-top:2.2rem}
+.floodlight-optical{width:min(1076.27px,100%);margin:2.2rem auto 0}
 .floodlight-optical h4{margin-bottom:.7rem}
-.floodlight-table-scroll{overflow-x:auto}
-.floodlight-optical .floodlight-data-table{min-width:34rem}
-.floodlight-optical .floodlight-data-table th,.floodlight-optical .floodlight-data-table td{width:25%;text-align:center}
+.floodlight-table-scroll{width:100%;overflow-x:auto}
+.floodlight-optical .floodlight-data-table{width:100%;min-width:0;table-layout:fixed}
+.floodlight-optical .floodlight-data-table th,.floodlight-optical .floodlight-data-table td{width:25%;padding:.42rem .45rem;text-align:center;white-space:nowrap}
 .floodlight-optical .floodlight-data-table thead th{background:var(--f3-green);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-align:center;text-transform:uppercase}
 .floodlight-optical .floodlight-data-table tbody td{background:#fff}
-.floodlight-technical-note{margin-top:1.35rem;padding:1rem 1.15rem;border:1px solid var(--f3-gold);background:#fffdf3;color:#68736f;font-size:.72rem;line-height:1.6}
+.floodlight-technical-note{display:block;width:100%;margin-top:1rem;padding:.875rem 1.25rem;border:1px solid var(--f3-gold);background:#fffdf3;color:#68736f;font-size:.72rem;line-height:1.55}
 .floodlight-technical-note strong{color:var(--f3-green)}
 .floodlight-table-block+.floodlight-table-block{margin-top:1.5rem}
 .floodlight-table-block h4,.floodlight-controls h4{padding:.7rem .8rem;margin-bottom:0;background:var(--f3-green);color:#fff;font-size:.83rem;letter-spacing:.06em;text-transform:uppercase}
