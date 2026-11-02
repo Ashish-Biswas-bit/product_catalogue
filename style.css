@@ -158,6 +158,64 @@ main{width:100%;min-width:0}
 .aio-product-list .aio-data-table{min-width:42rem}
 .aio-product-list .aio-data-table td:first-child{font-weight:700;color:var(--aio-ink)}
 @media(max-width:767px){.aio-page{padding:1.25rem}.aio-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.aio-top-grid,.aio-mid-grid{grid-template-columns:1fr;gap:1.8rem}.aio-mid-grid{margin-top:2rem;padding-top:1.5rem}.aio-table-block+.aio-table-block{margin-top:1.7rem}.aio-product-list{margin-top:2rem;padding-top:1.5rem}}
+
+/* Keep long catalogue copy readable as columns narrow. */
+p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
+.traffic-controller-table-group th,
+.traffic-controller-table-group td,
+.solar-data-table th,
+.solar-data-table td,
+.aio-data-table th,
+.aio-data-table td,
+.floodlight-data-table th,
+.floodlight-data-table td,
+.traffic-poles-overhead-specs th,
+.traffic-poles-overhead-specs td,
+.traffic-poles-standard-specs th,
+.traffic-poles-standard-specs td{min-width:0;overflow-wrap:anywhere}
+.traffic-controller-table-group th,
+.solar-data-table tbody th,
+.aio-data-table tbody th,
+.floodlight-data-table tbody th,
+.traffic-poles-overhead-specs th,
+.traffic-poles-standard-specs th{width:40%}
+.traffic-controller-table-group td,
+.solar-data-table tbody td,
+.aio-data-table tbody td,
+.floodlight-data-table tbody td,
+.traffic-poles-overhead-specs td,
+.traffic-poles-standard-specs td{width:60%}
+.traffic-controller-table-group table,
+.solar-data-table,
+.aio-data-table,
+.floodlight-data-table,
+.traffic-poles-overhead-specs table,
+.traffic-poles-standard-specs table{table-layout:fixed}
+.traffic-controller-intro h2::before,
+.futura-ciway-intro h2::before,
+.cy322-intro h2::before,
+.cl-led-intro h2::before,
+.countdown-timer-header h2::before,
+.pedestrian-buttons-header h2::before,
+.traffic-poles-header h2::before{flex-shrink:0}
+@media(max-width:767px){
+  .traffic-controller-table-group table,
+  .solar-data-table,
+  .aio-data-table,
+  .floodlight-data-table,
+  .traffic-poles-overhead-specs table,
+  .traffic-poles-standard-specs table{table-layout:auto}
+  .traffic-controller-table-group th,
+  .traffic-controller-table-group td,
+  .solar-data-table tbody th,
+  .solar-data-table tbody td,
+  .aio-data-table tbody th,
+  .aio-data-table tbody td,
+  .floodlight-data-table tbody th,
+  .floodlight-data-table tbody td,
+  .traffic-poles-overhead-specs th,
+  .traffic-poles-overhead-specs td{width:auto}
+}
 @media(max-width:420px){.aio-data-table{font-size:.72rem}.aio-data-table th,.aio-data-table td{padding:.55rem .5rem}}
 
 /* F3 floodlight brochure layout */
