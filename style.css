@@ -383,3 +383,70 @@ main{width:100%;min-width:0}
   .cy322-overview{margin-top:1rem}
   .cy322-mounting table,.cy322-bottom-tables table{font-size:.75rem}
 }
+
+.cl-led-page{border-top:1px solid #d1d5db}
+.cl-led-intro{padding-top:0}
+.cl-led-product-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,5vw,5rem);max-width:54rem;margin:0 auto 3rem}
+.cl-led-product-preview figure{display:flex;min-height:22rem;align-items:center;justify-content:center;margin:0;border:1px solid #dfe7dd;background:#f4f6ef;overflow:hidden}
+.cl-led-product-preview img{width:100%;height:100%;min-height:22rem;object-fit:contain}
+.cl-led-specifications h3,.cl-led-configurations h3{margin:0 0 .8rem;color:#0a5c43;font-size:1.1rem;font-weight:700}
+.cl-led-specifications table,.cl-led-configurations table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.82rem}
+.cl-led-specifications th,.cl-led-specifications td,.cl-led-configurations th,.cl-led-configurations td{padding:.7rem .75rem;border-bottom:1px solid #d5dfda;text-align:left;vertical-align:top}
+.cl-led-specifications thead th,.cl-led-configurations thead th{background:#0f2d59;color:#fff;font-weight:700}
+.cl-led-specifications thead th:first-child{width:36%}
+.cl-led-specifications tbody th,.cl-led-configurations tbody th{color:#27342f}
+.cl-led-specifications tbody td,.cl-led-configurations tbody td{color:#59665e}
+.cl-led-specifications tbody tr:nth-child(odd) th,.cl-led-specifications tbody tr:nth-child(odd) td,.cl-led-configurations tbody tr:nth-child(odd) th,.cl-led-configurations tbody tr:nth-child(odd) td{background:#fff}
+.cl-led-specifications tbody tr:nth-child(even) th,.cl-led-specifications tbody tr:nth-child(even) td,.cl-led-configurations tbody tr:nth-child(even) th,.cl-led-configurations tbody tr:nth-child(even) td{background:#eef6f7}
+.cl-led-features-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,6vw,6rem);margin-top:clamp(3rem,6vw,5rem)}
+.cl-led-features-grid .traffic-controller-module{margin-top:0}
+.cl-led-features-grid h3{padding-bottom:.7rem;border-bottom:1px solid #aebdb3}
+.cl-led-drawings{margin-top:clamp(3rem,6vw,5rem);padding-top:2rem;border-top:1px solid #d1d5db}
+.cl-led-drawings h3{margin:0;color:#0a5c43;font-size:1.1rem;font-weight:700}
+.cl-led-gold-rule{height:.3rem;margin:1rem 0 1.5rem;background:#c9a227}
+.cl-led-drawing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,5vw,5rem)}
+.cl-led-drawing-grid figure{margin:0;border:1px solid #dfe7dd;background:#f8fafc}
+.cl-led-drawing-grid h4{margin:0;padding:.75rem;color:#59665e;font-size:.88rem;text-align:center}
+.cl-led-drawing-grid img{width:100%;height:16rem;object-fit:contain}
+.cl-led-configurations{margin-top:clamp(3rem,6vw,5rem)}
+.cl-led-configurations h3{padding:.75rem .5rem;border-top:1px solid #aebdb3;border-bottom:1px solid #aebdb3}
+
+@media(max-width:639px){
+  .cl-led-page{padding-top:2rem}
+  .cl-led-intro{padding-top:0}
+  .cl-led-product-preview,.cl-led-features-grid,.cl-led-drawing-grid{grid-template-columns:1fr;gap:1.5rem}
+  .cl-led-product-preview figure,.cl-led-product-preview img{min-height:18rem}
+  .cl-led-specifications table,.cl-led-configurations table{font-size:.75rem}
+}
+
+.countdown-timer-page{border-top:1px solid #d1d5db}
+.countdown-timer-header{padding-bottom:0}
+.countdown-timer-header h2{margin:.35rem 0 0;color:#123b58;font-size:clamp(2.4rem,5vw,4.8rem);font-weight:700;letter-spacing:-.06em;line-height:.95}
+.countdown-timer-header .traffic-controller-lede{margin:.8rem 0 .25rem}
+.countdown-gold-rule{height:.3rem;margin-top:1.75rem;background:#c9a227}
+.countdown-description{margin-top:clamp(2.5rem,5vw,4rem)}
+.countdown-description h3,.countdown-specifications h3{margin:0 0 .8rem;color:#0a5c43;font-size:1.1rem;font-weight:700}
+.countdown-description p{max-width:62rem;margin:0;color:#4b5563;font-size:.92rem;line-height:1.7}
+.countdown-display-cluster{display:flex;flex-direction:column;align-items:center;margin:clamp(2.5rem,5vw,4rem) auto 0}
+.countdown-display-row{display:flex;gap:1.25rem}
+.countdown-display{display:flex;width:10rem;height:10rem;align-items:center;justify-content:center;border:1rem solid #15191b;border-radius:.35rem;background:#050708;box-shadow:0 0 0 .12rem #485052;color:#fff;font-family:"DM Sans",Arial,sans-serif;font-size:2.65rem;font-weight:700;letter-spacing:.08em;text-shadow:0 0 1rem currentColor}
+.countdown-red{color:#ff453f}
+.countdown-amber{color:#f0a52e;opacity:.62}
+.countdown-green{margin-top:1.25rem;color:#28e879}
+.countdown-display-cluster strong{margin-top:1rem;color:#0a5c43;font-size:.9rem}
+.countdown-specifications{max-width:58rem;margin:clamp(3rem,6vw,5rem) auto 0}
+.countdown-specifications table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.82rem}
+.countdown-specifications th,.countdown-specifications td{padding:.75rem;border-bottom:1px solid #d5dfda;text-align:left;vertical-align:top}
+.countdown-specifications thead th{background:#0f2d59;color:#fff;font-weight:700}
+.countdown-specifications thead th:first-child{width:32%}
+.countdown-specifications tbody th{color:#27342f}
+.countdown-specifications tbody td{color:#59665e}
+.countdown-specifications tbody tr:nth-child(odd) th,.countdown-specifications tbody tr:nth-child(odd) td{background:#fff}
+.countdown-specifications tbody tr:nth-child(even) th,.countdown-specifications tbody tr:nth-child(even) td{background:#eef6f7}
+
+@media(max-width:639px){
+  .countdown-timer-page{padding-top:2rem}
+  .countdown-display{width:7.5rem;height:7.5rem;border-width:.75rem;font-size:1.8rem}
+  .countdown-display-row{gap:.75rem}
+  .countdown-specifications table{font-size:.75rem}
+}
