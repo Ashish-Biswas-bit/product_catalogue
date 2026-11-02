@@ -342,3 +342,41 @@ main{width:100%;min-width:0}
   .futura-dimension-table table,.futura-specifications table{font-size:.75rem}
   .futura-metrics{display:grid;gap:.45rem}
 }
+
+.cy322-page{border-top:1px solid #d1d5db}
+.cy322-intro{padding-top:0}
+.cy322-overview-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.cy322-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.cy322-visuals figure{display:flex;min-height:23rem;align-items:center;justify-content:center;margin:0;border:1px solid #dfe7dd;background:#f4f6ef;overflow:hidden}
+.cy322-visuals img{width:100%;height:100%;min-height:23rem;object-fit:contain}
+.cy322-overview{margin-top:0}
+.cy322-overview h3,.cy322-mounting h3,.cy322-drawing h3,.cy322-bottom-tables h3{margin:0 0 .8rem;color:#0a5c43;font-size:1.1rem;font-weight:700}
+.cy322-overview table{width:100%;border-collapse:collapse;font-size:.82rem}
+.cy322-overview th,.cy322-overview td{padding:.68rem .6rem;border-bottom:1px solid #d5dfda;text-align:left;vertical-align:top}
+.cy322-overview th{width:44%;color:#27342f}
+.cy322-overview td{color:#59665e}
+.cy322-overview tr:nth-child(even) th,.cy322-overview tr:nth-child(even) td{background:#eef6f7}
+.cy322-mounting{margin-top:clamp(3rem,6vw,5rem);padding-top:2rem;border-top:1px solid #d1d5db}
+.cy322-mounting table,.cy322-bottom-tables table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.82rem}
+.cy322-mounting th,.cy322-mounting td,.cy322-bottom-tables th,.cy322-bottom-tables td{padding:.7rem .75rem;border-bottom:1px solid #d5dfda;text-align:left;vertical-align:top}
+.cy322-mounting thead th,.cy322-bottom-tables thead th{background:#123b58;color:#fff;font-weight:700}
+.cy322-mounting tbody th,.cy322-bottom-tables tbody th{color:#27342f}
+.cy322-mounting tbody td,.cy322-bottom-tables tbody td{color:#59665e}
+.cy322-mounting tbody tr:nth-child(odd) th,.cy322-mounting tbody tr:nth-child(odd) td,.cy322-bottom-tables tbody tr:nth-child(odd) th,.cy322-bottom-tables tbody tr:nth-child(odd) td{background:#fff}
+.cy322-mounting tbody tr:nth-child(even) th,.cy322-mounting tbody tr:nth-child(even) td,.cy322-bottom-tables tbody tr:nth-child(even) th,.cy322-bottom-tables tbody tr:nth-child(even) td{background:#eef6f7}
+.cy322-drawing{margin-top:clamp(3rem,6vw,5rem);padding-top:2rem;border-top:1px solid #d1d5db}
+.cy322-gold-rule{height:.3rem;margin:-.1rem 0 1.5rem;background:#c9a227}
+.cy322-blueprint-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.cy322-blueprint-grid figure{display:flex;min-height:15rem;align-items:center;justify-content:center;margin:0;border:1px solid #dfe7dd;background:#f8fafc;overflow:hidden}
+.cy322-blueprint-grid img{width:100%;height:100%;min-height:15rem;object-fit:contain}
+.cy322-bottom-tables{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,5vw,5rem);margin-top:clamp(3rem,6vw,5rem)}
+.cy322-bottom-tables .traffic-controller-module{margin-top:0}
+.cy322-bottom-tables h3{padding:.75rem .5rem;border-top:1px solid #aebdb3;border-bottom:1px solid #aebdb3}
+
+@media(max-width:639px){
+  .cy322-page{padding-top:2rem}
+  .cy322-intro{padding-top:0}
+  .cy322-overview-grid,.cy322-visuals,.cy322-blueprint-grid,.cy322-bottom-tables{grid-template-columns:1fr;gap:1.5rem}
+  .cy322-overview{margin-top:1rem}
+  .cy322-mounting table,.cy322-bottom-tables table{font-size:.75rem}
+}
