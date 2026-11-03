@@ -48,14 +48,14 @@ main{width:100%;min-width:0}
 .footer-brand{display:flex;align-items:center;padding:.85rem clamp(1rem,4vw,3.5rem);background:#0a4d34;color:#fff;font-size:.82rem;font-weight:700;line-height:1.35}
 .footer-disclaimer{display:flex;align-items:center;padding:.85rem clamp(1rem,4vw,3.5rem);background:#009b4e;color:#fff;font-size:.625rem;line-height:1.45;text-align:left}
 
-@media (min-width:640px) and (max-width:1023px){.catalog-page{padding-inline:clamp(1.5rem,5vw,3rem)}.feature-layout,.traffic-signal-product,.controller-module,.controller-module-reverse,.pole-module,.pole-module-reverse{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,4vw,3rem)}.data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.traffic-signals-intro{grid-template-columns:1fr}.traffic-signals-intro h3{grid-column:auto}.traffic-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:639px){body{background:#fff}.catalog-page{box-shadow:none;padding-inline:clamp(1rem,5vw,1.5rem);margin-bottom:0}.page-topline{flex-wrap:wrap;row-gap:.35rem}.page-topline span:last-child{width:100%}.section-title{display:block;margin-block:2.5rem 1.5rem}.section-title h3{font-size:clamp(2.35rem,12vw,4.5rem);overflow-wrap:anywhere}.led-intro-layout,.traffic-intro-layout{grid-template-columns:1fr;gap:1rem}.led-intro-layout .section-title{margin-block:1rem}.intro-logo{width:min(12rem,70%);margin:0 auto 1rem}.section-code{margin-top:.8rem}.feature-layout,.data-grid,.traffic-signal-product,.controller-module,.controller-module-reverse,.pole-module,.pole-module-reverse,.traffic-product-grid{grid-template-columns:1fr;gap:1.5rem}.feature-image,.feature-image img{min-height:clamp(14rem,58vw,22rem)}.data-grid{margin-top:2.5rem}.data-grid dl{grid-template-columns:1fr 1fr}.note{grid-template-columns:1fr;gap:.8rem}.note small{grid-column:1}.signal-heads-gallery-row,.pedestrian-gallery,.ryg-gallery{grid-template-columns:1fr}.ryg-gallery .ryg-main-image{grid-column:auto}.traffic-signals-section{padding-inline:clamp(1rem,5vw,1.5rem)}.traffic-signals-intro{display:block}.traffic-signals-intro h3{margin-block:1rem;font-size:clamp(2.3rem,11vw,4rem);white-space:nowrap;overflow-wrap:normal}.traffic-signals-intro>p:last-child{margin-top:1rem}.traffic-signal-specs{grid-template-columns:1fr}.traffic-signal-specs dt{border-bottom:0;padding-bottom:.2rem}.traffic-signal-specs dd{padding-top:.2rem}.controller-module-reverse .controller-module-image,.pole-module-reverse .pole-module-image{order:2}.controller-module-copy,.pole-module-copy{order:1}.controller-module-image,.pole-module-image{min-height:clamp(15rem,60vw,23rem)}.pole-spec-blueprint{grid-template-columns:1fr}.table-wrap,.traffic-dimension-table{overflow-x:auto}.page-footer{display:grid;gap:.8rem;margin-top:2.5rem}.footer-banner{grid-template-columns:1fr}.footer-brand,.footer-disclaimer{padding:.85rem 1rem}.footer-disclaimer{font-size:.625rem}}
-@media (max-width:420px){.data-grid dl{grid-template-columns:1fr}.model-list{font-size:.72rem}.table-wrap table,.traffic-dimension-table table{min-width:34rem}.site-footer{padding-inline:1rem}}
-.traffic-signals-section{width:min(100%,var(--card-width));margin:0 auto 2rem;padding:0;background:transparent}.traffic-signals-inner{display:block;width:100%;margin:0}.traffic-signals-intro,.traffic-signals-inner>.traffic-signal-product,.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{width:100%;min-height:0;margin:0 0 2rem;padding:clamp(2rem,5vw,5rem);background:#fff;box-shadow:0 10px 35px rgba(17,25,20,.08)}.traffic-signals-inner>.traffic-signal-product{display:grid}.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{display:block}.traffic-signals-inner>.controller-modules .controller-module,.traffic-signals-inner>.pole-modules .pole-module{margin-bottom:clamp(4rem,8vw,8rem);padding-bottom:clamp(3rem,6vw,6rem)}@media(max-width:639px){.traffic-signals-section{width:100%;margin-bottom:0}.traffic-signals-intro,.traffic-signals-inner>.traffic-signal-product,.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{width:100%;margin-bottom:1rem;padding:2rem 1rem;box-shadow:none}}
+
+
+
+.traffic-signals-section{width:min(100%,var(--card-width));margin:0 auto 2rem;padding:0;background:transparent}.traffic-signals-inner{display:block;width:100%;margin:0}.traffic-signals-intro,.traffic-signals-inner>.traffic-signal-product,.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{width:100%;min-height:0;margin:0 0 2rem;padding:clamp(2rem,5vw,5rem);background:#fff;box-shadow:0 10px 35px rgba(17,25,20,.08)}.traffic-signals-inner>.traffic-signal-product{display:grid}.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{display:block}.traffic-signals-inner>.controller-modules .controller-module,.traffic-signals-inner>.pole-modules .pole-module{margin-bottom:clamp(4rem,8vw,8rem);padding-bottom:clamp(3rem,6vw,6rem)}
 
 /* Keep every catalogue page card on the same responsive frame. */
 .catalog-page,.traffic-signals-intro,.traffic-signals-inner>.traffic-signal-product,.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{width:min(100%,var(--card-width));margin-left:auto;margin-right:auto;border-radius:0}
-@media(max-width:639px){.catalog-page,.traffic-signals-intro,.traffic-signals-inner>.traffic-signal-product,.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{width:100%;margin-left:0;margin-right:0}}
+
 .catalog-page,.traffic-signals-intro,.traffic-signals-inner>.traffic-signal-product,.traffic-signals-inner>.controller-modules,.traffic-signals-inner>.pole-modules{border:1px solid #d1d5db;border-radius:12px;background:#fff}
 .catalog-page.pale-page{background:#fff}
 .feature-image,.signal-heads-gallery figure,.pedestrian-gallery figure,.ryg-gallery figure,.controller-module-image,.pole-module-image{border:1px solid #d1d5db;border-radius:10px;background:#f8fafc;aspect-ratio:16/9;min-height:0}
@@ -68,7 +68,7 @@ main{width:100%;min-width:0}
 .traffic-signal-specs{border:1px solid #d1d5db;border-radius:8px;overflow:hidden;background:#fff}
 .traffic-signal-specs dt,.traffic-signal-specs dd{padding:.75rem .6rem}
 .model-list,.data-grid,.note{border-color:#d1d5db}
-@media(max-width:639px){.feature-image,.signal-heads-gallery figure,.pedestrian-gallery figure,.ryg-gallery figure,.controller-module-image,.pole-module-image{aspect-ratio:4/3}.section-title h3,.traffic-signals-intro h3,.traffic-signal-copy h3,.controller-module-copy h3,.pole-module-copy h3{min-height:0}}
+
 .traffic-intro-layout{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;width:100%;gap:1rem}
 .traffic-intro-copy{min-width:0;text-align:left}
 .traffic-intro-copy h3{margin:0;min-height:0;color:#123B38;font:600 48.64px/.84 "DM Sans",Arial,sans-serif;letter-spacing:-.08em;text-transform:uppercase;white-space:nowrap}
@@ -76,8 +76,8 @@ main{width:100%;min-width:0}
 .traffic-title{color:#123B38}
 .traffic-intro-logo-wrap{display:flex;flex-shrink:0;align-items:flex-end;justify-content:flex-end;width:min(14rem,28%);margin-left:auto}
 .traffic-intro-logo-wrap .intro-logo{width:100%}
-@media(min-width:768px){.traffic-intro-layout{flex-direction:row;align-items:center;gap:clamp(2rem,6vw,6rem)}}
-@media(max-width:767px){.traffic-intro-logo-wrap{width:min(12rem,70%);margin-top:1rem}}
+
+
 
 /* Series streetlight brochure layout */
 .solar-series-page{--solar-green:#0a5c43;--solar-ink:#123b38;--solar-gold:#b38a45;--solar-line:#d8e0dc;--solar-muted:#60706d;padding:clamp(1.5rem,4vw,3.5rem);background:#f8faf8;box-shadow:0 10px 35px rgba(17,25,20,.06);font-family:"DM Sans",Arial,sans-serif}
@@ -115,8 +115,8 @@ main{width:100%;min-width:0}
 .system-design p{margin:0;color:#51625e;font-size:.82rem;line-height:1.65}
 .solar-technical-note{margin-top:2.5rem;padding:1rem 1.2rem;border:1px solid #d8d8c8;background:#fffef5;color:#68736f;font-size:.72rem;line-height:1.6}
 .solar-technical-note strong{color:#4b5c57}
-@media(max-width:767px){.solar-series-grid{grid-template-columns:1fr}.solar-series-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.solar-series-page{padding:1.25rem}.solar-spec-block+.solar-spec-block{margin-top:1.7rem}}
-@media(max-width:420px){.solar-data-table{font-size:.72rem}.solar-data-table th,.solar-data-table td{padding:.55rem .5rem}}
+
+
 
 /* AIO integrated solar lighting brochure layout */
 .aio-page{--aio-green:#0a5c43;--aio-ink:#123b38;--aio-gold:#b38a45;--aio-line:#d8e0dc;--aio-muted:#60706d;padding:clamp(1.5rem,4vw,3.5rem);background:#f8faf8;box-shadow:0 10px 35px rgba(17,25,20,.06);font-family:"DM Sans",Arial,sans-serif}
@@ -153,7 +153,7 @@ main{width:100%;min-width:0}
 .aio-table-scroll{overflow-x:auto}
 .aio-product-list .aio-data-table{min-width:42rem}
 .aio-product-list .aio-data-table td:first-child{font-weight:700;color:var(--aio-ink)}
-@media(max-width:767px){.aio-page{padding:1.25rem}.aio-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.aio-top-grid,.aio-mid-grid{grid-template-columns:1fr;gap:1.8rem}.aio-mid-grid{margin-top:2rem;padding-top:1.5rem}.aio-table-block+.aio-table-block{margin-top:1.7rem}.aio-product-list{margin-top:2rem;padding-top:1.5rem}}
+
 
 /* Keep long catalogue copy readable as columns narrow. */
 p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
@@ -194,25 +194,8 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .countdown-timer-header h2::before,
 .pedestrian-buttons-header h2::before,
 .traffic-poles-header h2::before{flex-shrink:0}
-@media(max-width:767px){
-  .traffic-controller-table-group table,
-  .solar-data-table,
-  .aio-data-table,
-  .floodlight-data-table,
-  .traffic-poles-overhead-specs table,
-  .traffic-poles-standard-specs table{table-layout:auto}
-  .traffic-controller-table-group th,
-  .traffic-controller-table-group td,
-  .solar-data-table tbody th,
-  .solar-data-table tbody td,
-  .aio-data-table tbody th,
-  .aio-data-table tbody td,
-  .floodlight-data-table tbody th,
-  .floodlight-data-table tbody td,
-  .traffic-poles-overhead-specs th,
-  .traffic-poles-overhead-specs td{width:auto}
-}
-@media(max-width:420px){.aio-data-table{font-size:.72rem}.aio-data-table th,.aio-data-table td{padding:.55rem .5rem}}
+
+
 
 /* F3 floodlight brochure layout */
 .floodlight-page{--f3-green:#0a5c43;--f3-ink:#123b38;--f3-gold:#b38a45;--f3-line:#cbd5e1;padding:clamp(1.5rem,4vw,3.5rem);background:#f8faf8;box-shadow:0 10px 35px rgba(17,25,20,.06);font-family:"DM Sans",Arial,sans-serif}
@@ -249,8 +232,8 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .floodlight-data-table tbody th{width:44%;background:#eef2f0;color:#52635f;font-weight:700}
 .floodlight-data-table tbody td{color:#384b47}
 .floodlight-lifetime th,.floodlight-lifetime td{font-weight:700;border-top:2px solid var(--f3-green)}
-@media(max-width:767px){.floodlight-page{padding:1.25rem}.floodlight-heading h3{font-size:clamp(2rem,9vw,3.2rem)}.floodlight-heading p{font-size:.67rem;line-height:1.4}.floodlight-top-grid{grid-template-columns:1fr;gap:1.8rem}.floodlight-table-block+.floodlight-table-block{margin-top:1.7rem}.floodlight-controls{margin-top:1.8rem}}
-@media(max-width:420px){.floodlight-data-table{font-size:.72rem}.floodlight-data-table th,.floodlight-data-table td{padding:.55rem .5rem}}
+
+
 
 /* Product tile titles share the brochure's fixed heading scale. */
 .solar-series-heading h3,
@@ -296,16 +279,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .traffic-controller-table-group tr:nth-child(even) th,.traffic-controller-table-group tr:nth-child(even) td{background:#f1f5ed}
 .traffic-controller-right>.traffic-controller-module:last-child{margin-top:2.5rem}
 
-@media(max-width:639px){
-  .traffic-controller-page{padding:1.5rem 1rem;margin-bottom:0}
-  .traffic-controller-header{gap:1rem}
-  .traffic-controller-header img{width:6.5rem}
-  .traffic-controller-header h1{font-size:clamp(2.1rem,11vw,3.3rem)}
-  .traffic-controller-grid{grid-template-columns:1fr;gap:1rem}
-  .traffic-controller-gallery figure{min-height:16rem}
-  .traffic-controller-gallery img{height:16rem}
-  .traffic-controller-intro{padding-top:2.5rem}
-}
+
 
 .e100-controller-page{border-top:1px solid #d1d5db}
 .e100-controller-intro{padding-top:0}
@@ -331,15 +305,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .e100-tables .traffic-controller-table-group tr:nth-child(odd) th,.e100-tables .traffic-controller-table-group tr:nth-child(odd) td{background:#fff}
 .e100-tables .traffic-controller-table-group tr:nth-child(even) th,.e100-tables .traffic-controller-table-group tr:nth-child(even) td{background:#eef6f7}
 
-@media(max-width:639px){
-  .e100-controller-page{padding-top:2rem}
-  .e100-controller-intro{padding-top:0}
-  .e100-top-grid,.e100-monitoring-grid,.e100-tables{grid-template-columns:1fr;gap:1.5rem}
-  .e100-gallery figure{min-height:16rem}
-  .e100-gallery img{height:16rem}
-  .e100-coordination{margin-top:1rem}
-  .e100-monitoring{margin-top:2.5rem}
-}
+
 
 .sw200-controller-page{border-top:1px solid #d1d5db}
 .sw200-controller-intro{padding-top:0}
@@ -365,15 +331,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .sw200-specifications .traffic-controller-table-group tr:nth-child(odd) th,.sw200-specifications .traffic-controller-table-group tr:nth-child(odd) td{background:#fff}
 .sw200-specifications .traffic-controller-table-group tr:nth-child(even) th,.sw200-specifications .traffic-controller-table-group tr:nth-child(even) td{background:#eef6f7}
 
-@media(max-width:639px){
-  .sw200-controller-page{padding-top:2rem}
-  .sw200-controller-intro{padding-top:0}
-  .sw200-top-grid,.sw200-control-mode-grid{grid-template-columns:1fr;gap:1.5rem}
-  .sw200-product-image{min-height:16rem}
-  .sw200-product-image img{height:16rem}
-  .sw200-features{margin-top:1rem}
-  .sw200-control-modes{margin-top:2.5rem}
-}
+
 
 .futura-ciway-page{border-top:1px solid #d1d5db}
 .futura-ciway-intro{padding-top:0}
@@ -402,16 +360,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .futura-metrics{display:flex;justify-content:space-between;gap:1rem;margin-top:clamp(3rem,6vw,5rem);padding-top:1rem;border-top:1px solid #123b58;color:#123b58;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
 .futura-metrics small{font-size:.68rem;letter-spacing:.04em}
 
-@media(max-width:639px){
-  .futura-ciway-page{padding-top:2rem}
-  .futura-ciway-intro{padding-top:0}
-  .futura-product-preview,.futura-features-grid,.futura-schematics{grid-template-columns:1fr;gap:1.5rem}
-  .futura-product-preview{margin-bottom:2rem}
-  .futura-product-preview figure{min-height:16rem}
-  .futura-product-preview img{height:14rem}
-  .futura-dimension-table table,.futura-specifications table{font-size:.75rem}
-  .futura-metrics{display:grid;gap:.45rem}
-}
+
 
 .cy322-page{border-top:1px solid #d1d5db}
 .cy322-intro{padding-top:0}
@@ -447,13 +396,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .cy322-bottom-tables table{table-layout:fixed}
 .cy322-bottom-tables th,.cy322-bottom-tables td{width:33.333%}
 
-@media(max-width:639px){
-  .cy322-page{padding-top:2rem}
-  .cy322-intro{padding-top:0}
-  .cy322-overview-grid,.cy322-visuals,.cy322-blueprint-grid,.cy322-bottom-tables{grid-template-columns:1fr;gap:1.5rem}
-  .cy322-overview{margin-top:1rem}
-  .cy322-mounting table,.cy322-bottom-tables table{font-size:.75rem}
-}
+
 
 .cl-led-page{border-top:1px solid #d1d5db}
 .cl-led-intro{padding-top:0}
@@ -481,14 +424,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .cl-led-configurations{margin-top:clamp(3rem,6vw,5rem)}
 .cl-led-configurations h3{padding:.75rem .5rem;border-top:1px solid #aebdb3;border-bottom:1px solid #aebdb3}
 
-@media(max-width:639px){
-  .cl-led-page{padding-top:2rem}
-  .cl-led-intro{padding-top:0}
-  .cl-led-product-preview,.cl-led-features-grid,.cl-led-drawing-grid{grid-template-columns:1fr;gap:1.5rem}
-  .cl-led-product-preview figure{min-height:16rem}
-  .cl-led-product-preview img{height:14rem}
-  .cl-led-specifications table,.cl-led-configurations table{font-size:.75rem}
-}
+
 
 .countdown-timer-page{border-top:1px solid #d1d5db}
 .countdown-timer-header{padding-bottom:0}
@@ -514,12 +450,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .countdown-specifications tbody tr:nth-child(odd) th,.countdown-specifications tbody tr:nth-child(odd) td{background:#fff}
 .countdown-specifications tbody tr:nth-child(even) th,.countdown-specifications tbody tr:nth-child(even) td{background:#eef6f7}
 
-@media(max-width:639px){
-  .countdown-timer-page{padding-top:2rem}
-  .countdown-display{width:7.5rem;height:7.5rem;border-width:.75rem;font-size:1.8rem}
-  .countdown-display-row{gap:.75rem}
-  .countdown-specifications table{font-size:.75rem}
-}
+
 
 .pedestrian-buttons-page{border-top:1px solid #d1d5db}
 .pedestrian-buttons-header{padding-bottom:0}
@@ -543,15 +474,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .pedestrian-specifications tbody tr:nth-child(odd) th,.pedestrian-specifications tbody tr:nth-child(odd) td{background:#fff}
 .pedestrian-specifications tbody tr:nth-child(even) th,.pedestrian-specifications tbody tr:nth-child(even) td{background:#eef6f7}
 
-@media(max-width:639px){
-  .traffic-led-category-card{grid-template-columns:1fr;gap:1.5rem;padding:2rem 1.25rem;border-radius:1rem}
-  .traffic-led-category-brand{justify-content:center}
-  .traffic-led-category-brand img{width:min(13rem,75%)}
-  .pedestrian-buttons-page{padding-top:2rem}
-  .pedestrian-display-row{flex-direction:column;align-items:center;gap:1rem}
-  .pedestrian-display-row figure,.pedestrian-display-row img{min-height:18rem}
-  .pedestrian-specifications table{font-size:.75rem}
-}
+
 
 .traffic-poles-page{border-top:1px solid #d1d5db}
 .traffic-poles-header{padding-bottom:0}
@@ -579,13 +502,7 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
 .traffic-poles-standard-grid img{width:100%;height:22rem;object-fit:contain}
 .traffic-poles-standard-specs{margin-top:0}
 
-@media(max-width:639px){
-  .traffic-poles-page{padding-top:2rem}
-  .traffic-poles-overhead-grid,.traffic-poles-standard-grid{grid-template-columns:1fr;gap:1.5rem}
-  .traffic-poles-overhead-grid img{height:15rem}
-  .traffic-poles-standard-grid img{height:20rem}
-  .traffic-poles-overhead-specs table,.traffic-poles-standard-specs table{font-size:.75rem}
-}
+
 
 /* Product titles use one consistent catalog scale. */
 .led-intro-card .section-title h3,
@@ -646,3 +563,13 @@ p,li,th,td,dd,figcaption{overflow-wrap:anywhere}
   border-bottom:2px solid #B38A45;
 }
 .countdown-product-image{display:block;width:min(100%,32rem);height:auto;max-height:28rem;object-fit:contain;border:1px solid #eef2f0;border-radius:.5rem;background:#f8fafc;box-shadow:0 2px 8px rgba(17,25,20,.05)}
+
+/* Keep the catalogue on one fixed PDF-style canvas at every viewport size. */
+html{overflow-x:auto}
+body{overflow-x:auto;-webkit-text-size-adjust:100%}
+.catalog-frame{width:1280px;min-width:1280px;margin:0 auto}
+main{width:1280px;min-width:1280px}
+.traffic-intro-layout{flex-direction:row;align-items:center;gap:clamp(2rem,6vw,6rem)}
+.traffic-signals-section,.traffic-controller-page,.traffic-led-category-card{min-width:0}
+.table-wrap,.traffic-dimension-table{overflow-x:visible}
+table{width:100%}
